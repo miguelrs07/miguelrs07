@@ -1,4 +1,4 @@
-## Que show banda 👋
+## HOLAAAA! 👋
 
 ____________________
 Soy un estudiante de preparatoria con un poco de experiencia en el desarrollo web, aun que apenas estoy creando mi portafolio profesional, esta cuenta la utilizare para proyectos publicos.
