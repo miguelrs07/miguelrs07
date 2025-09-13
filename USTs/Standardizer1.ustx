@@ -1,0 +1,5558 @@
+﻿name: New Project
+comment: ""
+output_dir: Vocal
+cache_dir: UCache
+ustx_version: "0.6"
+resolution: 480
+bpm: 120
+beat_per_bar: 4
+beat_unit: 4
+expressions:
+  dyn:
+    name: dynamics (curve)
+    abbr: dyn
+    type: Curve
+    min: -240
+    max: 120
+    default_value: 0
+    is_flag: false
+    flag: ""
+  pitd:
+    name: pitch deviation (curve)
+    abbr: pitd
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  clr:
+    name: voice color
+    abbr: clr
+    type: Options
+    min: 0
+    max: -1
+    default_value: 0
+    is_flag: false
+    options: []
+  eng:
+    name: resampler engine
+    abbr: eng
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - ""
+    - worldline
+  vel:
+    name: velocity
+    abbr: vel
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  vol:
+    name: volume
+    abbr: vol
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  atk:
+    name: attack
+    abbr: atk
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  dec:
+    name: decay
+    abbr: dec
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  gen:
+    name: gender
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  genc:
+    name: gender (curve)
+    abbr: genc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  bre:
+    name: breath
+    abbr: bre
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: B
+  brec:
+    name: breathiness (curve)
+    abbr: brec
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  lpf:
+    name: lowpass
+    abbr: lpf
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: H
+  norm:
+    name: normalize
+    abbr: norm
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 86
+    is_flag: true
+    flag: P
+  mod:
+    name: modulation
+    abbr: mod
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  mod+:
+    name: modulation plus
+    abbr: mod+
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  alt:
+    name: alternate
+    abbr: alt
+    type: Numerical
+    min: 0
+    max: 16
+    default_value: 0
+    is_flag: false
+    flag: ""
+  dir:
+    name: direct
+    abbr: dir
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - off
+    - on
+  shft:
+    name: tone shift
+    abbr: shft
+    type: Numerical
+    min: -36
+    max: 36
+    default_value: 0
+    is_flag: false
+    flag: ""
+  shfc:
+    name: tone shift (curve)
+    abbr: shfc
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  tenc:
+    name: tension (curve)
+    abbr: tenc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  voic:
+    name: voicing (curve)
+    abbr: voic
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: false
+    flag: ""
+exp_selectors:
+- dyn
+- pitd
+- clr
+- eng
+- vel
+exp_primary: 0
+exp_secondary: 1
+key: 0
+time_signatures:
+- bar_position: 0
+  beat_per_bar: 4
+  beat_unit: 4
+tempos:
+- position: 0
+  bpm: 185
+tracks:
+- singer: Adachi-Rei_English
+  phonemizer: OpenUtau.Plugin.Builtin.EnglishCpVPhonemizerBETA
+  renderer_settings:
+    renderer: CLASSIC
+    resampler: moresampler.exe
+    wavtool: convergence
+  track_name: Track1
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: 0
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+voice_parts:
+- duration: 32160
+  name: bass
+  comment: ""
+  track_no: 0
+  position: 0
+  notes:
+  - position: 0
+    duration: 480
+    tone: 65
+    lyric: a
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 720
+    duration: 240
+    tone: 64
+    lyric: What
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 960
+    duration: 360
+    tone: 65
+    lyric: would
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 1320
+    duration: 360
+    tone: 72
+    lyric: it
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 1680
+    duration: 240
+    tone: 70
+    lyric: be
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 1920
+    duration: 480
+    tone: 69
+    lyric: like
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 2400
+    duration: 240
+    tone: 65
+    lyric: to
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 2640
+    duration: 240
+    tone: 67
+    lyric: grow
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 2880
+    duration: 480
+    tone: 65
+    lyric: up
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 3360
+    duration: 240
+    tone: 65
+    lyric: Have
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    - {index: 3, abbr: bre, value: 23}
+    - {index: 3, abbr: gen, value: 0}
+    - {index: 3, abbr: mod, value: 24}
+    - {index: 3, abbr: mod+, value: 12}
+    - {index: 4, abbr: bre, value: 23}
+    - {index: 4, abbr: gen, value: 0}
+    - {index: 4, abbr: mod, value: 24}
+    - {index: 4, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 3600
+    duration: 240
+    tone: 67
+    lyric: the
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 3840
+    duration: 360
+    tone: 64
+    lyric: struggles
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 4200
+    duration: 360
+    tone: 60
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 4560
+    duration: 240
+    tone: 64
+    lyric: of
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 4800
+    duration: 360
+    tone: 61
+    lyric: those
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    - {index: 3, abbr: bre, value: 23}
+    - {index: 3, abbr: gen, value: 0}
+    - {index: 3, abbr: mod, value: 24}
+    - {index: 3, abbr: mod+, value: 12}
+    - {index: 4, abbr: bre, value: 23}
+    - {index: 4, abbr: gen, value: 0}
+    - {index: 4, abbr: mod, value: 24}
+    - {index: 4, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 5160
+    duration: 360
+    tone: 69
+    lyric: who
+    pitch:
+      data:
+      - {x: -40, y: -80, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 5520
+    duration: 240
+    tone: 64
+    lyric: decay
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 5760
+    duration: 720
+    tone: 65
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 6480
+    duration: 120
+    tone: 70
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 6600
+    duration: 120
+    tone: 69
+    lyric: can't
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 6720
+    duration: 240
+    tone: 67
+    lyric: keep
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 23}
+    phoneme_overrides: []
+  - position: 6960
+    duration: 240
+    tone: 65
+    lyric: this
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 7200
+    duration: 240
+    tone: 64
+    lyric: to
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 7440
+    duration: 240
+    tone: 67
+    lyric: myself
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 7680
+    duration: 720
+    tone: 65
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 8400
+    duration: 240
+    tone: 64
+    lyric: The
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 23}
+    phoneme_overrides: []
+  - position: 8640
+    duration: 360
+    tone: 65
+    lyric: fabric
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 9000
+    duration: 360
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 9360
+    duration: 240
+    tone: 70
+    lyric: that
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 9600
+    duration: 480
+    tone: 69
+    lyric: makes
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 10080
+    duration: 240
+    tone: 65
+    lyric: up
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 10320
+    duration: 240
+    tone: 67
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    - {index: 3, abbr: bre, value: 23}
+    - {index: 3, abbr: gen, value: 0}
+    - {index: 3, abbr: mod, value: 24}
+    - {index: 3, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 10560
+    duration: 480
+    tone: 65
+    lyric: clothes
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 11040
+    duration: 240
+    tone: 65
+    lyric: It
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 11280
+    duration: 240
+    tone: 67
+    lyric: feels
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 11520
+    duration: 360
+    tone: 69
+    lyric: soft
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 11880
+    duration: 360
+    tone: 65
+    lyric: sometimes
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    - {index: 5, abbr: bre, value: 0}
+    - {index: 5, abbr: gen, value: -5}
+    - {index: 5, abbr: mod, value: 38}
+    - {index: 5, abbr: mod+, value: 35}
+    - {index: 5, abbr: norm, value: 92}
+    - {index: 5, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 12240
+    duration: 240
+    tone: 69
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 12480
+    duration: 360
+    tone: 70
+    lyric: rough
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 12840
+    duration: 360
+    tone: 64
+    lyric: but
+    pitch:
+      data:
+      - {x: -40, y: 60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 13200
+    duration: 240
+    tone: 70
+    lyric: it's
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 13440
+    duration: 360
+    tone: 69
+    lyric: always
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 13800
+    duration: 360
+    tone: 62
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 14160
+    duration: 240
+    tone: 69
+    lyric: so
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 14400
+    duration: 360
+    tone: 67
+    lyric: perfect
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 14760
+    duration: 360
+    tone: 65
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 15120
+    duration: 240
+    tone: 64
+    lyric: and
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 15360
+    duration: 720
+    tone: 65
+    lyric: bold
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 16080
+    duration: 240
+    tone: 64
+    lyric: Those
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 16320
+    duration: 360
+    tone: 65
+    lyric: windows
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 16680
+    duration: 360
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 17040
+    duration: 240
+    tone: 70
+    lyric: refracting
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    - {index: 5, abbr: bre, value: 0}
+    - {index: 5, abbr: gen, value: -5}
+    - {index: 5, abbr: mod, value: 38}
+    - {index: 5, abbr: mod+, value: 35}
+    - {index: 5, abbr: norm, value: 92}
+    - {index: 5, abbr: vel, value: 158}
+    - {index: 6, abbr: bre, value: 0}
+    - {index: 6, abbr: gen, value: -5}
+    - {index: 6, abbr: mod, value: 38}
+    - {index: 6, abbr: mod+, value: 35}
+    - {index: 6, abbr: norm, value: 92}
+    - {index: 6, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 17280
+    duration: 480
+    tone: 69
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 17760
+    duration: 240
+    tone: 65
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 18000
+    duration: 240
+    tone: 67
+    lyric: the
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 18240
+    duration: 480
+    tone: 65
+    lyric: light
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 18720
+    duration: 240
+    tone: 65
+    lyric: When
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    - {index: 3, abbr: bre, value: 23}
+    - {index: 3, abbr: gen, value: 0}
+    - {index: 3, abbr: mod, value: 24}
+    - {index: 3, abbr: mod+, value: 12}
+    - {index: 4, abbr: bre, value: 23}
+    - {index: 4, abbr: gen, value: 0}
+    - {index: 4, abbr: mod, value: 24}
+    - {index: 4, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 18960
+    duration: 240
+    tone: 67
+    lyric: it
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 19200
+    duration: 360
+    tone: 64
+    lyric: hits
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 19560
+    duration: 360
+    tone: 60
+    lyric: on
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 19920
+    duration: 240
+    tone: 64
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 20160
+    duration: 360
+    tone: 61
+    lyric: lenses
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 20520
+    duration: 360
+    tone: 69
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -80, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 20880
+    duration: 240
+    tone: 64
+    lyric: they
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 21120
+    duration: 720
+    tone: 65
+    lyric: shine
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 21840
+    duration: 120
+    tone: 70
+    lyric: It's
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 21960
+    duration: 120
+    tone: 69
+    lyric: as
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 22080
+    duration: 240
+    tone: 67
+    lyric: pretty
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 22320
+    duration: 240
+    tone: 65
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 22560
+    duration: 240
+    tone: 64
+    lyric: as
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 22800
+    duration: 240
+    tone: 67
+    lyric: it
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 23040
+    duration: 480
+    tone: 65
+    lyric: sounds
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 23760
+    duration: 240
+    tone: 64
+    lyric: So
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 24000
+    duration: 360
+    tone: 65
+    lyric: tropic
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 24360
+    duration: 360
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 24720
+    duration: 240
+    tone: 70
+    lyric: in
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 24960
+    duration: 480
+    tone: 69
+    lyric: fact
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 25440
+    duration: 240
+    tone: 65
+    lyric: Every
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    - {index: 4, abbr: bre, value: 0}
+    - {index: 4, abbr: gen, value: -5}
+    - {index: 4, abbr: mod, value: 38}
+    - {index: 4, abbr: mod+, value: 35}
+    - {index: 4, abbr: norm, value: 92}
+    - {index: 4, abbr: vel, value: 158}
+    - {index: 5, abbr: bre, value: 0}
+    - {index: 5, abbr: gen, value: -5}
+    - {index: 5, abbr: mod, value: 38}
+    - {index: 5, abbr: mod+, value: 35}
+    - {index: 5, abbr: norm, value: 92}
+    - {index: 5, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 25680
+    duration: 240
+    tone: 67
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    - {index: 3, abbr: bre, value: 23}
+    - {index: 3, abbr: gen, value: 0}
+    - {index: 3, abbr: mod, value: 24}
+    - {index: 3, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 25920
+    duration: 480
+    tone: 65
+    lyric: time
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 26400
+    duration: 240
+    tone: 65
+    lyric: that
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 26640
+    duration: 240
+    tone: 67
+    lyric: it
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 26880
+    duration: 360
+    tone: 69
+    lyric: happens
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 27240
+    duration: 360
+    tone: 65
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 23}
+    - {index: 0, abbr: gen, value: 0}
+    - {index: 0, abbr: mod, value: 24}
+    - {index: 0, abbr: mod+, value: 12}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    - {index: 3, abbr: bre, value: 23}
+    - {index: 3, abbr: gen, value: 0}
+    - {index: 3, abbr: mod, value: 24}
+    - {index: 3, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 27600
+    duration: 240
+    tone: 69
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 27840
+    duration: 360
+    tone: 70
+    lyric: cry
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 28200
+    duration: 360
+    tone: 64
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: 60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 23}
+    - {index: 1, abbr: gen, value: 0}
+    - {index: 1, abbr: mod, value: 24}
+    - {index: 1, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 28560
+    duration: 240
+    tone: 70
+    lyric: just
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 28800
+    duration: 360
+    tone: 69
+    lyric: wish
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 29160
+    duration: 360
+    tone: 62
+    lyric: that
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 29520
+    duration: 240
+    tone: 69
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 29760
+    duration: 360
+    tone: 67
+    lyric: could
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 23}
+    - {index: 2, abbr: gen, value: 0}
+    - {index: 2, abbr: mod, value: 24}
+    - {index: 2, abbr: mod+, value: 12}
+    phoneme_overrides: []
+  - position: 30120
+    duration: 360
+    tone: 65
+    lyric: trip
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 30480
+    duration: 240
+    tone: 64
+    lyric: and
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    phoneme_overrides: []
+  - position: 30720
+    duration: 960
+    tone: 65
+    lyric: fall
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 0}
+    - {index: 0, abbr: gen, value: -5}
+    - {index: 0, abbr: mod, value: 38}
+    - {index: 0, abbr: mod+, value: 35}
+    - {index: 0, abbr: norm, value: 92}
+    - {index: 0, abbr: vel, value: 158}
+    - {index: 1, abbr: bre, value: 0}
+    - {index: 1, abbr: gen, value: -5}
+    - {index: 1, abbr: mod, value: 38}
+    - {index: 1, abbr: mod+, value: 35}
+    - {index: 1, abbr: norm, value: 92}
+    - {index: 1, abbr: vel, value: 158}
+    - {index: 2, abbr: bre, value: 0}
+    - {index: 2, abbr: gen, value: -5}
+    - {index: 2, abbr: mod, value: 38}
+    - {index: 2, abbr: mod+, value: 35}
+    - {index: 2, abbr: norm, value: 92}
+    - {index: 2, abbr: vel, value: 158}
+    - {index: 3, abbr: bre, value: 0}
+    - {index: 3, abbr: gen, value: -5}
+    - {index: 3, abbr: mod, value: 38}
+    - {index: 3, abbr: mod+, value: 35}
+    - {index: 3, abbr: norm, value: 92}
+    - {index: 3, abbr: vel, value: 158}
+    phoneme_overrides: []
+  curves:
+  - xs:
+    - -120
+    - -115
+    - -95
+    - -90
+    - -60
+    - -55
+    - -20
+    - 0
+    - 5
+    - 25
+    - 35
+    - 50
+    - 60
+    - 70
+    - 75
+    - 100
+    - 105
+    - 270
+    - 295
+    - 300
+    - 310
+    - 325
+    - 330
+    - 340
+    - 360
+    - 365
+    - 385
+    - 390
+    - 400
+    - 405
+    - 510
+    - 530
+    - 535
+    - 550
+    - 555
+    - 560
+    - 575
+    - 580
+    - 585
+    - 605
+    - 635
+    - 655
+    - 665
+    - 670
+    - 675
+    - 680
+    - 685
+    - 695
+    - 700
+    - 720
+    - 725
+    - 750
+    - 755
+    - 760
+    - 770
+    - 775
+    - 870
+    - 875
+    - 880
+    - 1690
+    - 1695
+    - 1715
+    - 1730
+    - 1740
+    - 1750
+    - 1755
+    - 1795
+    - 1815
+    - 1820
+    - 1825
+    - 1830
+    - 1835
+    - 1845
+    - 1850
+    - 1885
+    - 1895
+    - 1905
+    - 1910
+    - 1980
+    - 1990
+    - 1995
+    - 2070
+    - 2095
+    - 2100
+    - 2400
+    - 2405
+    - 2425
+    - 2440
+    - 2445
+    - 2455
+    - 2460
+    - 2465
+    - 2470
+    - 2485
+    - 2495
+    - 2520
+    - 2525
+    - 2550
+    - 2555
+    - 2665
+    - 2695
+    - 2720
+    - 2730
+    - 2745
+    - 2750
+    - 2755
+    - 2770
+    - 2780
+    - 2785
+    - 2795
+    - 2800
+    - 2805
+    - 2895
+    - 2910
+    - 2915
+    - 2920
+    - 2930
+    - 2935
+    - 2950
+    - 2955
+    - 2960
+    - 2965
+    - 3070
+    - 3075
+    - 3090
+    - 3095
+    - 3135
+    - 3140
+    - 3165
+    - 3180
+    - 3210
+    - 3215
+    - 3250
+    - 3255
+    - 3260
+    - 3295
+    - 3300
+    - 3305
+    - 3310
+    - 3315
+    - 3320
+    - 3325
+    - 3330
+    - 3335
+    - 3340
+    - 3345
+    - 3350
+    - 3355
+    - 3380
+    - 3385
+    - 3395
+    - 3400
+    - 3405
+    - 3420
+    - 3560
+    - 3580
+    - 3595
+    - 3600
+    - 3615
+    - 3625
+    - 3640
+    - 3675
+    - 3680
+    - 3995
+    - 4000
+    - 4005
+    - 4010
+    - 4015
+    - 4025
+    - 4035
+    - 4040
+    - 4050
+    - 4055
+    - 4060
+    - 4065
+    - 4070
+    - 4080
+    - 4110
+    - 4120
+    - 4125
+    - 4130
+    - 4140
+    - 4210
+    - 4240
+    - 4245
+    - 4255
+    - 4265
+    - 4275
+    - 4290
+    - 4300
+    - 4310
+    - 4315
+    - 4320
+    - 4325
+    - 4360
+    - 4365
+    - 4370
+    - 4375
+    - 4380
+    - 4395
+    - 4425
+    - 4430
+    - 4485
+    - 4490
+    - 4500
+    - 4505
+    - 4510
+    - 4555
+    - 4570
+    - 4585
+    - 4595
+    - 4605
+    - 4615
+    - 4630
+    - 4635
+    - 4640
+    - 4645
+    - 4650
+    - 4655
+    - 4665
+    - 4670
+    - 4680
+    - 4695
+    - 4715
+    - 4720
+    - 4735
+    - 4740
+    - 4745
+    - 4755
+    - 4765
+    - 4770
+    - 4795
+    - 4800
+    - 4805
+    - 4810
+    - 5115
+    - 5120
+    - 5130
+    - 5150
+    - 5165
+    - 5170
+    - 5190
+    - 5205
+    - 5210
+    - 5215
+    - 5225
+    - 5230
+    - 5240
+    - 5245
+    - 5250
+    - 5255
+    - 5260
+    - 5265
+    - 5270
+    - 5275
+    - 5280
+    - 5285
+    - 5295
+    - 5310
+    - 5315
+    - 5325
+    - 5330
+    - 5500
+    - 5505
+    - 5525
+    - 5540
+    - 5545
+    - 5550
+    - 5555
+    - 5565
+    - 5570
+    - 5580
+    - 5600
+    - 5610
+    - 5620
+    - 5625
+    - 5635
+    - 5655
+    - 5660
+    - 5675
+    - 5685
+    - 5690
+    - 5705
+    - 5715
+    - 5720
+    - 5725
+    - 5795
+    - 5810
+    - 5845
+    - 5850
+    - 5875
+    - 5880
+    - 6220
+    - 6225
+    - 6235
+    - 6245
+    - 6250
+    - 6270
+    - 6275
+    - 6280
+    - 6285
+    - 6290
+    - 6295
+    - 6310
+    - 6315
+    - 6325
+    - 6335
+    - 6340
+    - 6345
+    - 6360
+    - 6365
+    - 6375
+    - 6380
+    - 6390
+    - 6415
+    - 6425
+    - 6430
+    - 6435
+    - 6440
+    - 6450
+    - 6455
+    - 6460
+    - 6465
+    - 6490
+    - 6495
+    - 6510
+    - 6525
+    - 6535
+    - 6635
+    - 6650
+    - 6655
+    - 6660
+    - 6665
+    - 6670
+    - 6675
+    - 6680
+    - 6785
+    - 6820
+    - 6840
+    - 6855
+    - 6870
+    - 6885
+    - 6890
+    - 6970
+    - 6975
+    - 6985
+    - 7000
+    - 7015
+    - 7020
+    - 7220
+    - 7225
+    - 7245
+    - 7250
+    - 7265
+    - 7270
+    - 7285
+    - 7295
+    - 7315
+    - 7340
+    - 7345
+    - 7660
+    - 7675
+    - 7680
+    - 7690
+    - 7700
+    - 7715
+    - 7720
+    - 7730
+    - 7735
+    - 7770
+    - 7795
+    - 7810
+    - 7820
+    - 7825
+    - 7850
+    - 7855
+    - 7870
+    - 7875
+    - 7880
+    - 7885
+    - 7890
+    - 7900
+    - 7905
+    - 7940
+    - 7945
+    - 7950
+    - 7955
+    - 7960
+    - 7965
+    - 7970
+    - 7975
+    - 7985
+    - 8010
+    - 8020
+    - 8025
+    - 8030
+    - 8065
+    - 8080
+    - 8095
+    - 8100
+    - 8185
+    - 8200
+    - 8205
+    - 8210
+    - 8215
+    - 8220
+    - 8225
+    - 8230
+    - 8245
+    - 8250
+    - 8260
+    - 8275
+    - 8280
+    - 8285
+    - 8290
+    - 8300
+    - 8305
+    - 8320
+    - 8325
+    - 8330
+    - 8345
+    - 8350
+    - 8360
+    - 8370
+    - 8380
+    - 8385
+    - 8400
+    - 8405
+    - 8410
+    - 8425
+    - 8430
+    - 8445
+    - 8450
+    - 8455
+    - 8465
+    - 8470
+    - 8480
+    - 8490
+    - 8495
+    - 8505
+    - 8510
+    - 8515
+    - 8520
+    - 9270
+    - 9285
+    - 9305
+    - 9315
+    - 9325
+    - 9330
+    - 9345
+    - 9385
+    - 9400
+    - 9425
+    - 9430
+    - 9440
+    - 9445
+    - 9450
+    - 9455
+    - 9485
+    - 9490
+    - 9500
+    - 10080
+    - 10085
+    - 10105
+    - 10115
+    - 10120
+    - 10125
+    - 10135
+    - 10140
+    - 10145
+    - 10160
+    - 10170
+    - 10180
+    - 10190
+    - 10200
+    - 10205
+    - 10240
+    - 10245
+    - 10250
+    - 10255
+    - 10265
+    - 10270
+    - 10280
+    - 10285
+    - 10350
+    - 10370
+    - 10535
+    - 10540
+    - 10570
+    - 11295
+    - 11300
+    - 11320
+    - 11335
+    - 11355
+    - 11370
+    - 11390
+    - 11395
+    - 11400
+    - 11415
+    - 11435
+    - 11440
+    - 11510
+    - 11580
+    - 11590
+    - 11610
+    - 11625
+    - 11640
+    - 11645
+    - 11655
+    - 11660
+    - 11665
+    - 11670
+    - 11675
+    - 11680
+    - 11685
+    - 11690
+    - 11695
+    - 11700
+    - 11710
+    - 11720
+    - 11730
+    - 11735
+    - 11745
+    - 11765
+    - 11775
+    - 11780
+    - 11785
+    - 11955
+    - 11960
+    - 11980
+    - 11985
+    - 11990
+    - 12020
+    - 12040
+    - 12045
+    - 12050
+    - 12080
+    - 12090
+    - 12100
+    - 12115
+    - 12120
+    - 12160
+    - 12165
+    - 12185
+    - 12195
+    - 12200
+    - 12205
+    - 12220
+    - 12230
+    - 12235
+    - 12290
+    - 12305
+    - 12310
+    - 12315
+    - 12320
+    - 12350
+    - 12355
+    - 12385
+    - 12390
+    - 12395
+    - 12400
+    - 12405
+    - 12410
+    - 12415
+    - 12440
+    - 12470
+    - 12475
+    - 12480
+    - 12485
+    - 12490
+    - 12500
+    - 12505
+    - 12510
+    - 12530
+    - 12535
+    - 12590
+    - 12595
+    - 12605
+    - 12610
+    - 12620
+    - 12625
+    - 12635
+    - 12640
+    - 12650
+    - 12655
+    - 12665
+    - 12705
+    - 12740
+    - 12750
+    - 12755
+    - 12775
+    - 12780
+    - 12800
+    - 12805
+    - 12820
+    - 12825
+    - 12835
+    - 12840
+    - 12860
+    - 12865
+    - 12875
+    - 12880
+    - 12890
+    - 12900
+    - 12905
+    - 12910
+    - 12915
+    - 12925
+    - 12930
+    - 12935
+    - 12940
+    - 12950
+    - 12960
+    - 12965
+    - 12980
+    - 12995
+    - 13000
+    - 13005
+    - 13020
+    - 13025
+    - 13050
+    - 13060
+    - 13065
+    - 13090
+    - 13095
+    - 13125
+    - 13130
+    - 13210
+    - 13220
+    - 13225
+    - 13250
+    - 13260
+    - 13270
+    - 13275
+    - 13290
+    - 13295
+    - 13375
+    - 13390
+    - 13395
+    - 13415
+    - 13420
+    - 13455
+    - 13460
+    - 13500
+    - 13505
+    - 13510
+    - 13515
+    - 13520
+    - 13525
+    - 13530
+    - 13535
+    - 13540
+    - 13595
+    - 13600
+    - 13615
+    - 13625
+    - 13640
+    - 13645
+    - 13650
+    - 13655
+    - 13660
+    - 13665
+    - 13670
+    - 13675
+    - 13680
+    - 13915
+    - 13920
+    - 13935
+    - 13950
+    - 13960
+    - 14145
+    - 14150
+    - 14180
+    - 14190
+    - 14195
+    - 14200
+    - 14205
+    - 14210
+    - 14215
+    - 14220
+    - 14320
+    - 14340
+    - 14345
+    - 14350
+    - 14355
+    - 14370
+    - 14375
+    - 14380
+    - 14395
+    - 14400
+    - 14405
+    - 14415
+    - 14420
+    - 14425
+    - 14430
+    - 14435
+    - 14440
+    - 14445
+    - 14460
+    - 14655
+    - 14670
+    - 14700
+    - 14710
+    - 15095
+    - 15100
+    - 15120
+    - 15135
+    - 15145
+    - 15155
+    - 15160
+    - 15170
+    - 15180
+    - 15190
+    - 15200
+    - 15210
+    - 15220
+    - 15240
+    - 15250
+    - 15280
+    - 15285
+    - 15360
+    - 15365
+    - 15375
+    - 15390
+    - 15400
+    - 15405
+    - 15415
+    - 15420
+    - 15425
+    - 15450
+    - 15455
+    - 15500
+    - 15525
+    - 15535
+    - 15540
+    - 15545
+    - 15550
+    - 15570
+    - 15585
+    - 15590
+    - 15600
+    - 15605
+    - 15615
+    - 15620
+    - 15725
+    - 15730
+    - 15770
+    - 15775
+    - 15780
+    - 15785
+    - 15790
+    - 15795
+    - 15815
+    - 15825
+    - 15830
+    - 15835
+    - 15850
+    - 15855
+    - 15860
+    - 15865
+    - 15875
+    - 15885
+    - 15890
+    - 15895
+    - 15900
+    - 15905
+    - 15915
+    - 15920
+    - 15930
+    - 15945
+    - 15950
+    - 15960
+    - 15970
+    - 15980
+    - 15985
+    - 15990
+    - 15995
+    - 16010
+    - 16015
+    - 16035
+    - 16050
+    - 16070
+    - 16075
+    - 16080
+    - 16090
+    - 16095
+    - 16100
+    - 16105
+    - 16115
+    - 16130
+    - 16150
+    - 16155
+    - 16215
+    - 16220
+    - 16225
+    - 16255
+    - 16280
+    - 16285
+    - 16300
+    - 16310
+    - 16330
+    - 16345
+    - 16350
+    - 16355
+    - 16365
+    - 16370
+    - 16380
+    - 16395
+    - 16400
+    - 16415
+    - 16420
+    - 16425
+    - 16430
+    - 16435
+    - 16445
+    - 16450
+    - 16455
+    - 16460
+    - 16465
+    - 16470
+    - 16475
+    - 16480
+    - 16485
+    - 16490
+    - 16495
+    - 16560
+    - 16565
+    - 16590
+    - 16600
+    - 16605
+    - 16610
+    - 16615
+    - 16710
+    - 16745
+    - 16760
+    - 16770
+    - 16775
+    - 16795
+    - 16805
+    - 16810
+    - 16815
+    - 16820
+    - 16835
+    - 16840
+    - 16855
+    - 17100
+    - 17105
+    - 17110
+    - 17115
+    - 17120
+    - 17125
+    - 17130
+    - 17155
+    - 17165
+    - 17170
+    - 17175
+    - 17180
+    - 17210
+    - 17215
+    - 17220
+    - 17275
+    - 17280
+    - 17285
+    - 17290
+    - 17295
+    - 17305
+    - 17320
+    - 17325
+    - 17335
+    - 17350
+    - 17355
+    - 17360
+    - 17375
+    - 17385
+    - 17410
+    - 17415
+    - 17420
+    - 17450
+    - 17455
+    - 17475
+    - 17490
+    - 17500
+    - 17505
+    - 17510
+    - 17515
+    - 18245
+    - 18250
+    - 18265
+    - 18275
+    - 18280
+    - 18285
+    - 18295
+    - 18390
+    - 18395
+    - 18405
+    - 18410
+    - 18415
+    - 18420
+    - 18425
+    - 18430
+    - 18440
+    - 18450
+    - 18465
+    - 18475
+    - 18485
+    - 18490
+    - 18495
+    - 18500
+    - 18505
+    - 18515
+    - 18520
+    - 18525
+    - 18530
+    - 18535
+    - 18540
+    - 18545
+    - 18595
+    - 18610
+    - 18615
+    - 18625
+    - 18630
+    - 18640
+    - 18645
+    - 18990
+    - 18995
+    - 19015
+    - 19020
+    - 19035
+    - 19040
+    - 19160
+    - 19175
+    - 19195
+    - 19210
+    - 19220
+    - 19230
+    - 19245
+    - 19265
+    - 19270
+    - 19275
+    - 19285
+    - 19295
+    - 19300
+    - 19315
+    - 19320
+    - 19355
+    - 19365
+    - 19375
+    - 19385
+    - 19420
+    - 19425
+    - 19445
+    - 19460
+    - 19465
+    - 19475
+    - 19480
+    - 19485
+    - 19505
+    - 19510
+    - 19515
+    - 19530
+    - 19535
+    - 19540
+    - 19545
+    - 20305
+    - 20310
+    - 20315
+    - 20325
+    - 20330
+    - 20335
+    - 20340
+    - 20355
+    - 20360
+    - 20365
+    - 20370
+    - 20875
+    - 20880
+    - 20900
+    - 20910
+    - 20930
+    - 20935
+    - 20950
+    - 20960
+    - 20975
+    - 20980
+    - 20985
+    - 21110
+    - 21115
+    - 21120
+    - 21125
+    - 21130
+    - 21140
+    - 21145
+    - 21150
+    - 21155
+    - 21175
+    - 21200
+    - 21205
+    - 21220
+    - 21225
+    - 21240
+    - 21300
+    - 21305
+    - 21330
+    - 21340
+    - 21350
+    - 21360
+    - 21365
+    - 21370
+    - 21380
+    - 21395
+    - 21405
+    - 21420
+    - 21430
+    - 21435
+    - 21450
+    - 21460
+    - 21470
+    - 21475
+    - 21485
+    - 21490
+    - 21500
+    - 21505
+    - 21510
+    - 21515
+    - 21530
+    - 21540
+    - 21545
+    - 21555
+    - 21560
+    - 22780
+    - 22785
+    - 22805
+    - 22815
+    - 22825
+    - 22850
+    - 22865
+    - 22875
+    - 22890
+    - 22895
+    - 22900
+    - 22920
+    - 22925
+    - 22940
+    - 22950
+    - 22955
+    - 22975
+    - 22995
+    - 23015
+    - 23020
+    - 23045
+    - 23050
+    - 23055
+    - 23060
+    - 23090
+    - 23105
+    - 23110
+    - 23120
+    - 23130
+    - 23140
+    - 23775
+    - 23780
+    - 23805
+    - 23810
+    - 23815
+    - 23820
+    - 23830
+    - 23840
+    - 23845
+    - 23850
+    - 23880
+    - 23890
+    - 23895
+    - 23900
+    - 24815
+    - 24820
+    - 24840
+    - 24865
+    - 24875
+    - 24880
+    - 24900
+    - 24905
+    - 24910
+    - 24920
+    - 24925
+    - 24935
+    - 24940
+    - 24950
+    - 24955
+    - 24965
+    - 24980
+    - 24990
+    - 24995
+    - 25010
+    - 25020
+    - 25035
+    - 25045
+    - 25055
+    - 25060
+    - 25065
+    - 25070
+    - 25075
+    - 25080
+    - 25090
+    - 25105
+    - 25125
+    - 25135
+    - 25140
+    - 25150
+    - 25155
+    - 25170
+    - 25175
+    - 25185
+    - 25190
+    - 25195
+    - 25200
+    - 25220
+    - 25225
+    - 25230
+    - 26115
+    - 26120
+    - 26125
+    - 26135
+    - 26155
+    - 26160
+    - 26170
+    - 26180
+    - 26185
+    - 26980
+    - 26985
+    - 27005
+    - 27010
+    - 27035
+    - 27040
+    - 27170
+    - 27175
+    - 27185
+    - 27195
+    - 27200
+    - 27205
+    - 27295
+    - 27300
+    - 27365
+    - 27435
+    - 27440
+    - 27495
+    - 27500
+    - 27540
+    - 27550
+    - 27560
+    - 27565
+    - 27575
+    - 27580
+    - 27610
+    - 27630
+    - 27635
+    - 27640
+    - 27645
+    - 27655
+    - 27660
+    - 27705
+    - 27720
+    - 27735
+    - 27745
+    - 27755
+    - 27765
+    - 27770
+    - 27775
+    - 27785
+    - 27810
+    - 27820
+    - 27825
+    - 27830
+    - 27870
+    - 27885
+    - 27890
+    - 27905
+    - 27915
+    - 27930
+    - 27950
+    - 27955
+    - 27965
+    - 27975
+    - 27980
+    - 27990
+    - 28000
+    - 28025
+    - 28030
+    - 28035
+    - 28045
+    - 28055
+    - 28070
+    - 28080
+    - 28090
+    - 28100
+    - 28110
+    - 28125
+    - 28140
+    - 28145
+    - 28150
+    - 28155
+    - 28160
+    - 28165
+    - 28180
+    - 28185
+    - 28195
+    - 28215
+    - 28220
+    - 28230
+    - 28245
+    - 28255
+    - 28260
+    - 28270
+    - 28280
+    - 28310
+    - 28315
+    - 28320
+    - 28345
+    - 28355
+    - 28365
+    - 28375
+    - 28380
+    - 28385
+    - 29890
+    - 29895
+    - 29920
+    - 29925
+    - 29930
+    - 29935
+    - 29940
+    - 30010
+    - 30025
+    - 30030
+    - 30045
+    - 30060
+    - 30075
+    - 30080
+    - 30085
+    - 30095
+    - 30100
+    - 30110
+    - 30115
+    - 30120
+    - 30125
+    - 30135
+    - 30140
+    - 30145
+    - 30150
+    - 30155
+    - 30160
+    - 30165
+    - 30170
+    - 30175
+    - 30260
+    - 30295
+    - 30300
+    - 30330
+    - 30335
+    - 30425
+    - 30430
+    - 30435
+    - 30440
+    - 30445
+    - 30450
+    - 30490
+    - 30495
+    - 30505
+    - 30520
+    - 30525
+    - 30530
+    - 30540
+    - 30585
+    - 30590
+    - 30660
+    - 30670
+    - 30675
+    - 30685
+    - 30695
+    - 30700
+    - 30705
+    - 30710
+    - 30725
+    - 30735
+    - 30745
+    - 30750
+    - 30770
+    - 30775
+    - 30790
+    - 30795
+    - 30820
+    - 30825
+    - 30860
+    - 30865
+    - 30885
+    - 30890
+    - 31055
+    - 31080
+    - 31095
+    - 31100
+    - 31115
+    - 31120
+    - 31135
+    - 31140
+    - 31160
+    - 31170
+    - 31175
+    - 31185
+    - 31195
+    - 31225
+    - 31245
+    - 31255
+    - 31280
+    - 31285
+    - 31300
+    - 31305
+    - 31310
+    - 31325
+    - 31330
+    - 31355
+    - 31365
+    - 31380
+    - 31385
+    - 31390
+    - 31405
+    - 31415
+    - 31425
+    - 31445
+    - 31455
+    - 31465
+    - 31490
+    - 31510
+    - 31515
+    - 31520
+    - 31540
+    - 31785
+    - 31790
+    ys:
+    - 0
+    - 26
+    - 26
+    - 30
+    - 30
+    - -400
+    - -400
+    - -386
+    - -386
+    - -370
+    - -350
+    - -341
+    - -327
+    - -318
+    - -314
+    - -276
+    - -9
+    - -5
+    - -9
+    - 60
+    - 73
+    - 86
+    - 95
+    - 105
+    - 123
+    - 127
+    - 141
+    - 14
+    - 14
+    - 9
+    - 5
+    - 0
+    - -5
+    - -5
+    - -9
+    - 48
+    - 18
+    - 14
+    - 21
+    - 21
+    - 16
+    - 12
+    - -1
+    - 0
+    - -32
+    - -32
+    - -638
+    - -629
+    - -615
+    - -597
+    - -588
+    - -570
+    - -570
+    - -452
+    - -393
+    - 0
+    - 0
+    - 228
+    - 0
+    - 0
+    - -9
+    - -9
+    - -14
+    - -18
+    - -45
+    - 109
+    - 72
+    - 36
+    - 31
+    - 18
+    - 13
+    - -1
+    - -5
+    - -19
+    - -51
+    - -55
+    - -55
+    - -10
+    - -14
+    - -10
+    - -5
+    - -5
+    - -10
+    - 0
+    - 0
+    - -148
+    - -124
+    - -93
+    - -76
+    - -68
+    - -18
+    - -5
+    - 5
+    - 14
+    - 3
+    - 3
+    - -2
+    - -2
+    - -6
+    - -6
+    - -2
+    - 3
+    - 12
+    - 16
+    - -1
+    - -1
+    - 18
+    - 18
+    - 27
+    - 31
+    - 31
+    - 36
+    - 36
+    - 31
+    - 27
+    - 22
+    - 22
+    - 18
+    - 18
+    - 13
+    - 13
+    - 0
+    - 0
+    - -19
+    - -14
+    - -10
+    - -10
+    - 0
+    - 1
+    - -6
+    - -6
+    - -11
+    - -11
+    - -56
+    - -11
+    - -11
+    - -43
+    - 303
+    - -6
+    - -1
+    - 338
+    - 9
+    - 19
+    - 364
+    - 40
+    - 50
+    - -81
+    - -91
+    - -49
+    - -45
+    - -24
+    - -17
+    - -11
+    - -10
+    - -15
+    - -11
+    - -36
+    - -41
+    - -41
+    - -23
+    - -14
+    - -14
+    - 0
+    - 0
+    - -9
+    - -9
+    - 0
+    - 0
+    - 40
+    - 66
+    - 60
+    - 78
+    - 75
+    - 78
+    - 66
+    - 76
+    - 82
+    - 24
+    - 8
+    - 2
+    - -2
+    - -5
+    - -5
+    - -9
+    - -14
+    - -14
+    - -13
+    - -8
+    - 20
+    - 42
+    - 70
+    - 48
+    - -274
+    - -107
+    - -16
+    - -39
+    - -39
+    - -7
+    - -6
+    - -15
+    - -15
+    - -20
+    - -20
+    - -5
+    - -5
+    - -52
+    - -5
+    - -5
+    - -9
+    - -14
+    - -18
+    - -27
+    - -109
+    - -126
+    - -173
+    - -184
+    - -168
+    - -171
+    - -155
+    - -146
+    - -120
+    - -95
+    - -27
+    - 32
+    - 39
+    - 17
+    - 18
+    - 5
+    - -5
+    - -5
+    - -9
+    - -9
+    - -14
+    - -14
+    - 0
+    - 0
+    - 7
+    - 7
+    - 3
+    - -2
+    - -6
+    - -6
+    - -11
+    - 3
+    - -2
+    - -1
+    - 3
+    - 13
+    - 24
+    - 245
+    - 319
+    - 77
+    - 67
+    - 64
+    - 83
+    - 82
+    - 823
+    - -532
+    - -481
+    - -181
+    - -162
+    - 0
+    - 0
+    - -77
+    - -121
+    - -144
+    - -150
+    - -155
+    - -159
+    - -165
+    - 87
+    - 86
+    - 72
+    - 68
+    - 59
+    - 59
+    - 49
+    - 22
+    - 18
+    - 9
+    - 9
+    - 4
+    - 4
+    - 9
+    - 13
+    - 18
+    - 18
+    - 9
+    - 9
+    - 4
+    - 4
+    - 0
+    - 0
+    - -232
+    - -254
+    - -268
+    - 175
+    - 61
+    - 40
+    - 22
+    - 8
+    - -3
+    - -8
+    - -8
+    - -6
+    - 0
+    - 9
+    - 15
+    - -172
+    - -129
+    - -53
+    - -40
+    - -34
+    - -24
+    - -14
+    - -14
+    - -11
+    - -7
+    - -2
+    - 14
+    - 24
+    - 35
+    - -34
+    - -34
+    - -57
+    - -29
+    - -12
+    - -10
+    - -10
+    - -14
+    - -19
+    - -19
+    - -18
+    - -16
+    - -12
+    - 3
+    - 3
+    - -2
+    - -6
+    - -15
+    - -15
+    - -20
+    - 3
+    - 1
+    - 483
+    - -24
+    - -11
+    - -5
+    - 1
+    - 0
+    - -40
+    - -13
+    - -9
+    - -11
+    - -15
+    - -47
+    - -47
+    - -11
+    - -11
+    - 0
+    - 0
+    - 14
+    - 16
+    - 30
+    - 33
+    - 34
+    - 37
+    - 29
+    - 30
+    - -11
+    - -34
+    - -43
+    - -43
+    - -47
+    - -47
+    - 57
+    - 103
+    - 115
+    - 125
+    - 132
+    - 138
+    - 138
+    - 216
+    - 72
+    - 56
+    - 41
+    - 28
+    - 17
+    - 9
+    - 3
+    - -1
+    - -6
+    - -6
+    - -2
+    - -5
+    - 5
+    - 5
+    - -5
+    - -5
+    - 8
+    - 8
+    - -1
+    - -1
+    - -10
+    - -10
+    - -24
+    - -28
+    - -28
+    - -56
+    - -60
+    - -92
+    - -115
+    - -119
+    - -133
+    - -137
+    - -160
+    - -165
+    - -269
+    - -292
+    - -306
+    - -337
+    - -359
+    - -372
+    - -510
+    - -563
+    - -657
+    - -733
+    - -740
+    - -743
+    - -729
+    - -520
+    - -455
+    - -421
+    - -370
+    - -260
+    - -165
+    - -87
+    - -51
+    - -37
+    - -33
+    - -24
+    - -24
+    - 0
+    - 0
+    - -11
+    - -11
+    - -20
+    - -20
+    - -24
+    - -43
+    - -120
+    - -134
+    - -140
+    - -148
+    - -186
+    - -212
+    - -242
+    - 0
+    - 0
+    - 488
+    - 0
+    - 0
+    - -250
+    - -221
+    - -189
+    - -172
+    - -169
+    - -138
+    - -129
+    - -124
+    - -79
+    - -70
+    - -47
+    - -34
+    - -24
+    - -20
+    - -15
+    - -11
+    - -11
+    - -6
+    - -6
+    - -2
+    - -2
+    - 3
+    - 3
+    - -2
+    - 0
+    - -144
+    - 0
+    - 0
+    - 30
+    - -6
+    - -14
+    - -14
+    - -5
+    - -5
+    - 9
+    - 9
+    - -1
+    - -1
+    - -5
+    - -5
+    - -1
+    - 7
+    - 7
+    - 3
+    - -2
+    - -6
+    - -6
+    - -11
+    - 237
+    - 247
+    - 165
+    - 170
+    - 154
+    - 148
+    - 112
+    - 95
+    - 68
+    - 49
+    - 36
+    - 31
+    - 22
+    - 18
+    - 9
+    - 9
+    - 0
+    - 0
+    - -32
+    - -69
+    - -76
+    - -2
+    - -2
+    - -11
+    - -11
+    - 219
+    - 107
+    - 89
+    - 76
+    - 66
+    - -14
+    - -10
+    - -5
+    - -5
+    - -9
+    - -7
+    - -10
+    - -25
+    - -37
+    - -2
+    - -2
+    - 4
+    - 9
+    - 17
+    - 0
+    - 0
+    - -342
+    - -192
+    - -172
+    - -155
+    - -140
+    - -129
+    - -121
+    - -116
+    - -111
+    - -84
+    - -79
+    - -79
+    - -74
+    - -65
+    - -61
+    - -56
+    - -56
+    - -34
+    - -34
+    - 16
+    - 16
+    - 26
+    - 35
+    - 39
+    - -115
+    - -55
+    - -61
+    - -32
+    - -25
+    - -19
+    - -19
+    - -14
+    - -10
+    - -5
+    - -5
+    - -1
+    - -1
+    - 4
+    - 4
+    - 9
+    - 9
+    - 13
+    - 13
+    - 18
+    - 18
+    - 22
+    - 22
+    - 31
+    - 30
+    - 23
+    - 15
+    - -19
+    - -45
+    - -74
+    - -107
+    - 57
+    - 44
+    - 64
+    - 41
+    - 26
+    - 18
+    - 15
+    - 12
+    - 7
+    - 7
+    - 3
+    - -2
+    - -2
+    - -6
+    - -6
+    - -11
+    - -11
+    - -8
+    - -29
+    - -2
+    - 4
+    - 4
+    - 9
+    - 9
+    - 13
+    - 13
+    - 9
+    - 4
+    - 4
+    - -1
+    - -1
+    - -5
+    - -5
+    - -3
+    - 5
+    - 14
+    - 34
+    - 59
+    - 85
+    - 120
+    - -2
+    - -2
+    - 80
+    - 80
+    - 78
+    - 43
+    - 21
+    - -5
+    - -35
+    - -68
+    - -103
+    - -141
+    - -180
+    - 0
+    - 0
+    - -293
+    - -291
+    - -280
+    - 0
+    - 0
+    - 732
+    - 458
+    - 380
+    - 345
+    - 320
+    - 9
+    - -5
+    - -13
+    - -15
+    - -15
+    - -20
+    - -19
+    - -22
+    - -18
+    - -1
+    - 9
+    - -56
+    - -46
+    - -738
+    - -988
+    - -695
+    - -683
+    - -672
+    - -662
+    - -653
+    - -651
+    - -10
+    - 3
+    - 3
+    - -6
+    - -11
+    - 0
+    - 0
+    - -163
+    - -188
+    - -203
+    - -205
+    - -201
+    - -186
+    - -173
+    - -129
+    - -65
+    - -47
+    - -34
+    - -24
+    - -6
+    - -2
+    - -2
+    - 3
+    - 3
+    - -395
+    - -421
+    - -460
+    - -473
+    - -11
+    - -11
+    - 0
+    - -156
+    - -120
+    - -115
+    - -74
+    - -74
+    - -65
+    - -65
+    - -56
+    - -56
+    - -34
+    - -34
+    - -29
+    - -29
+    - -20
+    - -20
+    - 0
+    - 0
+    - -9
+    - -9
+    - 45
+    - 50
+    - -9
+    - -9
+    - 23
+    - 27
+    - 41
+    - 50
+    - 50
+    - 118
+    - 118
+    - 155
+    - 173
+    - 191
+    - 200
+    - 214
+    - 232
+    - 236
+    - 236
+    - 264
+    - 282
+    - 291
+    - 377
+    - 377
+    - 600
+    - 650
+    - 664
+    - 709
+    - 709
+    - 852
+    - 895
+    - 1131
+    - 1144
+    - 1160
+    - 1191
+    - 1200
+    - 1168
+    - 1144
+    - 1151
+    - 1134
+    - -10
+    - -19
+    - -23
+    - -20
+    - -15
+    - -15
+    - -22
+    - -22
+    - -17
+    - 1
+    - 1
+    - 19
+    - 19
+    - 47
+    - 56
+    - 65
+    - 65
+    - 83
+    - 88
+    - 92
+    - 124
+    - 124
+    - 165
+    - 169
+    - 188
+    - 210
+    - 278
+    - 297
+    - 328
+    - 365
+    - 428
+    - 456
+    - 88
+    - 58
+    - 33
+    - 13
+    - -1
+    - -9
+    - -6
+    - -62
+    - -31
+    - -23
+    - -20
+    - -18
+    - -17
+    - -17
+    - -22
+    - -32
+    - -40
+    - -45
+    - -70
+    - -78
+    - -85
+    - -86
+    - -38
+    - -53
+    - 7
+    - 1
+    - 1
+    - -1
+    - -13
+    - -27
+    - -50
+    - 16
+    - 16
+    - 7
+    - 7
+    - 3
+    - 3
+    - -2
+    - -2
+    - -13
+    - -15
+    - -15
+    - 285
+    - 292
+    - 298
+    - 300
+    - 298
+    - 284
+    - 286
+    - 262
+    - 199
+    - 190
+    - 190
+    - 144
+    - 126
+    - 94
+    - 81
+    - 67
+    - 22
+    - 17
+    - 3
+    - -1
+    - -10
+    - -15
+    - -15
+    - 0
+    - 0
+    - -83
+    - -43
+    - -24
+    - -17
+    - -11
+    - -5
+    - -5
+    - -14
+    - -59
+    - -59
+    - -86
+    - -95
+    - -127
+    - -127
+    - -205
+    - -236
+    - -255
+    - -264
+    - -264
+    - -227
+    - -214
+    - -214
+    - -82
+    - -36
+    - -27
+    - -27
+    - -5
+    - 23
+    - 36
+    - 41
+    - 41
+    - 36
+    - 32
+    - 32
+    - 27
+    - 27
+    - 0
+    - 0
+    - -49
+    - -16
+    - -11
+    - -11
+    - -6
+    - -6
+    - -15
+    - -15
+    - -20
+    - -29
+    - -29
+    - -47
+    - -110
+    - -114
+    - -152
+    - -176
+    - -184
+    - -199
+    - -174
+    - -193
+    - -73
+    - -52
+    - -48
+    - -56
+    - -56
+    - -52
+    - -34
+    - -20
+    - -15
+    - -4
+    - 26
+    - 730
+    - 731
+    - 18
+    - 12
+    - 12
+    - 1170
+    - 12
+    - 0
+    - 0
+    - 512
+    - 0
+    - 0
+    - 564
+    - 401
+    - 535
+    - 516
+    - 466
+    - 453
+    - 0
+    - 0
+    - 557
+    - 496
+    - 467
+    - 422
+    - 403
+    - 366
+    - 344
+    - 316
+    - 316
+    - -2
+    - -2
+    - -298
+    - -309
+    - -316
+    - -109
+    - -62
+    - -45
+    - -47
+    - -4
+    - -9
+    - -6
+    - 5
+    - 5
+    - -1
+    - -1
+    - 3
+    - 106
+    - 85
+    - 72
+    - 72
+    - 63
+    - 58
+    - 58
+    - 49
+    - 49
+    - 40
+    - 40
+    - 35
+    - 31
+    - 31
+    - 22
+    - 22
+    - 17
+    - 17
+    - 13
+    - 13
+    - 8
+    - 8
+    - 3
+    - 3
+    - -1
+    - -6
+    - -6
+    - 0
+    - 0
+    - -577
+    - -411
+    - -345
+    - -294
+    - -195
+    - -143
+    - -120
+    - -97
+    - -93
+    - -79
+    - -56
+    - -47
+    - -29
+    - -24
+    - -15
+    - 3
+    - 16
+    - 16
+    - 0
+    - 0
+    - -196
+    - -234
+    - -240
+    - -218
+    - -218
+    - -82
+    - -68
+    - -23
+    - 0
+    - 0
+    - 191
+    - 134
+    - 113
+    - 112
+    - 94
+    - 80
+    - 53
+    - 48
+    - 30
+    - -24
+    - -38
+    - -43
+    - 0
+    - 0
+    - 8
+    - 8
+    - 3
+    - 8
+    - 13
+    - 49
+    - 63
+    - 64
+    - 82
+    - 100
+    - 159
+    - 164
+    - 431
+    - 438
+    - 451
+    - 470
+    - 480
+    - 480
+    - 478
+    - 467
+    - 422
+    - 413
+    - 353
+    - 335
+    - 331
+    - 303
+    - 303
+    - 281
+    - 226
+    - 131
+    - 76
+    - 63
+    - 63
+    - 44
+    - 40
+    - 31
+    - 31
+    - 17
+    - 3
+    - -15
+    - -19
+    - -24
+    - -28
+    - 0
+    - 0
+    - -238
+    - -252
+    - -265
+    - -279
+    - -288
+    - -297
+    - -297
+    - 0
+    - 0
+    - -11
+    - -11
+    - -15
+    - -15
+    - -20
+    - -20
+    - -43
+    - -34
+    - -34
+    - -29
+    - 0
+    - 0
+    - -11
+    - -11
+    - -3
+    - -2
+    - -2
+    - 3
+    - 3
+    - 2
+    - -18
+    - -48
+    - -57
+    - -58
+    - -97
+    - -115
+    - -119
+    - 14
+    - 3
+    - -5
+    - -6
+    - -6
+    - -11
+    - -20
+    - -20
+    - -24
+    - -29
+    - -70
+    - -70
+    - -56
+    - -38
+    - -34
+    - -29
+    - 178
+    - 102
+    - 82
+    - 76
+    - 70
+    - 61
+    - 56
+    - 34
+    - 24
+    - 20
+    - 6
+    - 2
+    - -16
+    - -16
+    - -57
+    - -57
+    - -66
+    - -89
+    - -130
+    - -153
+    - -185
+    - -235
+    - -257
+    - -303
+    - -330
+    - -348
+    - -351
+    - -353
+    - -346
+    - -1185
+    - -1193
+    - -1200
+    - -1200
+    - -510
+    - -290
+    - -181
+    - -73
+    - 0
+    - 0
+    - 85
+    - 57
+    - 44
+    - 16
+    - 7
+    - 3
+    - -15
+    - -20
+    - -24
+    - -24
+    - -29
+    - 0
+    - 0
+    - -99
+    - -42
+    - -36
+    - -32
+    - -30
+    - -29
+    - -29
+    - -34
+    - -38
+    - -38
+    - -43
+    - -52
+    - -52
+    - -56
+    - -56
+    - -61
+    - -61
+    - -65
+    - -65
+    - -70
+    - -70
+    - -74
+    - -31
+    - -21
+    - -12
+    - -5
+    - 1
+    - 5
+    - 7
+    - 7
+    - 3
+    - -2
+    - -2
+    - -6
+    - -6
+    - -5
+    - -3
+    - 0
+    - 4
+    - -25
+    - -74
+    - -60
+    - -48
+    - -31
+    - -28
+    - -26
+    - -24
+    - -20
+    - -15
+    - -15
+    - -17
+    - -19
+    - -25
+    - -34
+    - -40
+    - 9
+    - 2
+    - 1
+    - -8
+    - -10
+    - -15
+    - -15
+    - -21
+    - -21
+    - -26
+    - -26
+    - -30
+    - -30
+    - -35
+    - -35
+    - -39
+    - -39
+    - -35
+    - -30
+    - -26
+    - -26
+    - -21
+    - -21
+    - -12
+    - -12
+    - -7
+    - -3
+    - -3
+    - 6
+    - 15
+    - 20
+    - 29
+    - 34
+    - 43
+    - 47
+    - 52
+    - 52
+    - 65
+    - 65
+    - 82
+    - 97
+    - 102
+    - 106
+    - 108
+    - 124
+    - 129
+    - 147
+    - 161
+    - 165
+    - 179
+    - 197
+    - 220
+    - 1124
+    - 1143
+    - 1200
+    - 1200
+    - 0
+    abbr: pitd
+wave_parts: []

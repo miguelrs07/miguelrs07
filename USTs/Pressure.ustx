@@ -1,0 +1,9787 @@
+﻿name: New Project
+comment: ""
+output_dir: Vocal
+cache_dir: UCache
+ustx_version: "0.6"
+resolution: 480
+bpm: 120
+beat_per_bar: 4
+beat_unit: 4
+expressions:
+  dyn:
+    name: dynamics (curve)
+    abbr: dyn
+    type: Curve
+    min: -240
+    max: 120
+    default_value: 0
+    is_flag: false
+    flag: ""
+  pitd:
+    name: pitch deviation (curve)
+    abbr: pitd
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  clr:
+    name: voice color
+    abbr: clr
+    type: Options
+    min: 0
+    max: -1
+    default_value: 0
+    is_flag: false
+    options: []
+  eng:
+    name: resampler engine
+    abbr: eng
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - ""
+    - worldline
+  vel:
+    name: velocity
+    abbr: vel
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  vol:
+    name: volume
+    abbr: vol
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  atk:
+    name: attack
+    abbr: atk
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  dec:
+    name: decay
+    abbr: dec
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  gen:
+    name: gender
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  genc:
+    name: gender (curve)
+    abbr: genc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  bre:
+    name: breath
+    abbr: bre
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: B
+  brec:
+    name: breathiness (curve)
+    abbr: brec
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  lpf:
+    name: lowpass
+    abbr: lpf
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: H
+  norm:
+    name: normalize
+    abbr: norm
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 86
+    is_flag: true
+    flag: P
+  mod:
+    name: modulation
+    abbr: mod
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  mod+:
+    name: modulation plus
+    abbr: mod+
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  alt:
+    name: alternate
+    abbr: alt
+    type: Numerical
+    min: 0
+    max: 16
+    default_value: 0
+    is_flag: false
+    flag: ""
+  dir:
+    name: direct
+    abbr: dir
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - off
+    - on
+  shft:
+    name: tone shift
+    abbr: shft
+    type: Numerical
+    min: -36
+    max: 36
+    default_value: 0
+    is_flag: false
+    flag: ""
+  shfc:
+    name: tone shift (curve)
+    abbr: shfc
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  tenc:
+    name: tension (curve)
+    abbr: tenc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  voic:
+    name: voicing (curve)
+    abbr: voic
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: false
+    flag: ""
+exp_selectors:
+- dyn
+- pitd
+- clr
+- eng
+- vel
+exp_primary: 0
+exp_secondary: 1
+key: 0
+time_signatures:
+- bar_position: 0
+  beat_per_bar: 4
+  beat_unit: 4
+tempos:
+- position: 0
+  bpm: 165
+tracks:
+- singer: Adachi-Rei_English
+  phonemizer: OpenUtau.Plugin.Builtin.EnglishCpVPhonemizerBETA
+  renderer_settings:
+    renderer: CLASSIC
+    resampler: moresampler.exe
+    wavtool: convergence
+  track_name: Track1
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: 0
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+- singer: Adachi-Rei_English
+  phonemizer: OpenUtau.Plugin.Builtin.EnglishCpVPhonemizerBETA
+  renderer_settings:
+    renderer: CLASSIC
+    resampler: moresampler.exe
+    wavtool: convergence
+  track_name: Bass 2
+  track_color: Blue
+  mute: false
+  solo: true
+  volume: 0
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+voice_parts:
+- duration: 31680
+  name: Bass 2
+  comment: ""
+  track_no: 0
+  position: 0
+  notes:
+  - position: 480
+    duration: 360
+    tone: 74
+    lyric: Pressure
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 840
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 1200
+    duration: 240
+    tone: 77
+    lyric: A
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 1440
+    duration: 480
+    tone: 74
+    lyric: blade
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 1920
+    duration: 240
+    tone: 73
+    lyric: tightly
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    - {index: 7, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 2160
+    duration: 240
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 2400
+    duration: 480
+    tone: 70
+    lyric: forged
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 2880
+    duration: 240
+    tone: 73
+    lyric: Made
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 3120
+    duration: 240
+    tone: 72
+    lyric: to
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 3360
+    duration: 480
+    tone: 70
+    lyric: break
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 3840
+    duration: 240
+    tone: 73
+    lyric: more
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 4080
+    duration: 240
+    tone: 72
+    lyric: than
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 4320
+    duration: 360
+    tone: 70
+    lyric: flesh
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 4680
+    duration: 360
+    tone: 67
+    lyric: Cut
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 5040
+    duration: 240
+    tone: 73
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 5280
+    duration: 360
+    tone: 74
+    lyric: neck
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 5640
+    duration: 360
+    tone: 70
+    lyric: and
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 6000
+    duration: 240
+    tone: 72
+    lyric: it
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 6240
+    duration: 1440
+    tone: 70
+    lyric: hurts
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 7680
+    duration: 240
+    tone: 72
+    lyric: Theex
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 7920
+    duration: 240
+    tone: 73
+    lyric: pectations
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    - {index: 7, abbr: vel, value: 125}
+    - {index: 8, abbr: vel, value: 125}
+    - {index: 9, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 8160
+    duration: 360
+    tone: 74
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8520
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8880
+    duration: 240
+    tone: 77
+    lyric: The
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 9120
+    duration: 240
+    tone: 74
+    lyric: sheer
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 9360
+    duration: 240
+    tone: 78
+    lyric: amount
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 9600
+    duration: 240
+    tone: 77
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 9840
+    duration: 240
+    tone: 75
+    lyric: of
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 10080
+    duration: 480
+    tone: 74
+    lyric: hate
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 10560
+    duration: 240
+    tone: 70
+    lyric: That
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 10800
+    duration: 240
+    tone: 72
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 11040
+    duration: 360
+    tone: 70
+    lyric: voice
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 11400
+    duration: 360
+    tone: 67
+    lyric: can
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 11760
+    duration: 240
+    tone: 69
+    lyric: create
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 12000
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 12360
+    duration: 360
+    tone: 67
+    lyric: It
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 12720
+    duration: 240
+    tone: 73
+    lyric: just
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 12960
+    duration: 360
+    tone: 74
+    lyric: gets
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 13320
+    duration: 360
+    tone: 70
+    lyric: on
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 13680
+    duration: 240
+    tone: 72
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 13920
+    duration: 1440
+    tone: 70
+    lyric: nerves
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 15360
+    duration: 240
+    tone: 72
+    lyric: Standing
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    - {index: 7, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 15600
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 15840
+    duration: 360
+    tone: 74
+    lyric: frightful
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    - {index: 7, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 16200
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 16560
+    duration: 240
+    tone: 77
+    lyric: Forgetting
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 16800
+    duration: 480
+    tone: 74
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 17280
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 17520
+    duration: 240
+    tone: 72
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 17760
+    duration: 480
+    tone: 70
+    lyric: pride
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 18240
+    duration: 240
+    tone: 73
+    lyric: Grab
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 18480
+    duration: 240
+    tone: 72
+    lyric: those
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 18720
+    duration: 480
+    tone: 70
+    lyric: selfless
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    - {index: 7, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 19200
+    duration: 240
+    tone: 73
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 19440
+    duration: 240
+    tone: 72
+    lyric: obsessions
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 19680
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 20040
+    duration: 360
+    tone: 67
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 20400
+    duration: 240
+    tone: 73
+    lyric: And
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 20640
+    duration: 360
+    tone: 74
+    lyric: go
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 21000
+    duration: 360
+    tone: 70
+    lyric: with
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 21360
+    duration: 240
+    tone: 72
+    lyric: the
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 21600
+    duration: 1080
+    tone: 70
+    lyric: vibe
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 23040
+    duration: 240
+    tone: 72
+    lyric: I'm
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 23280
+    duration: 240
+    tone: 73
+    lyric: in
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 23520
+    duration: 360
+    tone: 74
+    lyric: handcuffs
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 23880
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 24240
+    duration: 240
+    tone: 77
+    lyric: No
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 24480
+    duration: 240
+    tone: 74
+    lyric: mount
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 24720
+    duration: 240
+    tone: 78
+    lyric: of
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 24960
+    duration: 240
+    tone: 77
+    lyric: holding
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 25200
+    duration: 240
+    tone: 75
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 25440
+    duration: 480
+    tone: 74
+    lyric: back
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 25920
+    duration: 240
+    tone: 70
+    lyric: Will
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 26160
+    duration: 240
+    tone: 72
+    lyric: bee
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 26400
+    duration: 360
+    tone: 70
+    lyric: nough
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 26760
+    duration: 360
+    tone: 67
+    lyric: to
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 27120
+    duration: 240
+    tone: 69
+    lyric: replace
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 27360
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 27720
+    duration: 360
+    tone: 67
+    lyric: What
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 28080
+    duration: 240
+    tone: 73
+    lyric: got
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 28320
+    duration: 360
+    tone: 74
+    lyric: broken
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    - {index: 4, abbr: vel, value: 125}
+    - {index: 5, abbr: vel, value: 125}
+    - {index: 6, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 28680
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 29040
+    duration: 240
+    tone: 72
+    lyric: at
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 29280
+    duration: 1440
+    tone: 70
+    lyric: last
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 30720
+    duration: 240
+    tone: 72
+    lyric: and
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    phoneme_overrides: []
+  - position: 30960
+    duration: 240
+    tone: 73
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 1065.909, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vel, value: 125}
+    - {index: 1, abbr: vel, value: 125}
+    - {index: 2, abbr: vel, value: 125}
+    - {index: 3, abbr: vel, value: 125}
+    phoneme_overrides: []
+  curves:
+  - xs:
+    - -95
+    - -90
+    - -85
+    - -80
+    - -75
+    - -65
+    - -35
+    - -20
+    - -15
+    - -5
+    - 0
+    - 5
+    - 20
+    - 45
+    - 50
+    - 80
+    - 90
+    - 95
+    - 100
+    - 110
+    - 125
+    - 130
+    - 140
+    - 145
+    - 185
+    - 195
+    - 205
+    - 215
+    - 225
+    - 230
+    - 370
+    - 375
+    - 395
+    - 405
+    - 410
+    - 415
+    - 425
+    - 440
+    - 450
+    - 455
+    - 465
+    - 470
+    - 485
+    - 490
+    - 500
+    - 510
+    - 520
+    - 690
+    - 695
+    - 725
+    - 735
+    - 745
+    - 750
+    - 755
+    - 760
+    - 765
+    - 770
+    - 775
+    - 790
+    - 805
+    - 815
+    - 820
+    - 830
+    - 845
+    - 850
+    - 885
+    - 900
+    - 910
+    - 915
+    - 920
+    - 925
+    - 935
+    - 940
+    - 965
+    - 970
+    - 995
+    - 1000
+    - 1005
+    - 1015
+    - 1020
+    - 1030
+    - 1040
+    - 1045
+    - 1055
+    - 1060
+    - 1065
+    - 1090
+    - 1100
+    - 1105
+    - 1115
+    - 1120
+    - 1135
+    - 1150
+    - 1165
+    - 1195
+    - 1205
+    - 1220
+    - 1230
+    - 1915
+    - 1925
+    - 1975
+    - 1980
+    - 1995
+    - 2000
+    - 2005
+    - 2020
+    - 2025
+    - 2035
+    - 2055
+    - 2060
+    - 2065
+    - 2075
+    - 2090
+    - 2095
+    - 2125
+    - 2140
+    - 2155
+    - 2160
+    - 2165
+    - 2170
+    - 2850
+    - 2855
+    - 2865
+    - 2870
+    - 2880
+    - 2885
+    - 2910
+    - 2920
+    - 2925
+    - 2935
+    - 2950
+    - 2955
+    - 2965
+    - 2970
+    - 2975
+    - 3000
+    - 3005
+    - 3020
+    - 3025
+    - 3030
+    - 3035
+    - 3040
+    - 3045
+    - 3055
+    - 3060
+    - 3065
+    - 3070
+    - 3080
+    - 3100
+    - 3105
+    - 3815
+    - 3820
+    - 3855
+    - 3870
+    - 3875
+    - 3880
+    - 3890
+    - 3920
+    - 3935
+    - 3940
+    - 3975
+    - 3980
+    - 4005
+    - 4010
+    - 4030
+    - 4050
+    - 4055
+    - 4070
+    - 4080
+    - 4090
+    - 4095
+    - 4105
+    - 4110
+    - 4115
+    - 4120
+    - 4135
+    - 4140
+    - 4145
+    - 4155
+    - 4160
+    - 4165
+    - 4175
+    - 4200
+    - 4205
+    - 4215
+    - 4220
+    - 4230
+    - 4235
+    - 4240
+    - 4245
+    - 4255
+    - 4260
+    - 4265
+    - 4270
+    - 4275
+    - 5740
+    - 5745
+    - 5765
+    - 5770
+    - 5785
+    - 5795
+    - 5805
+    - 5810
+    - 5825
+    - 5845
+    - 5850
+    - 5900
+    - 5920
+    - 5930
+    - 5935
+    - 5940
+    - 5945
+    - 5950
+    - 5960
+    - 5965
+    - 5975
+    - 5980
+    - 5990
+    - 5995
+    - 6005
+    - 6010
+    - 6035
+    - 6040
+    - 6080
+    - 6085
+    - 6160
+    - 6220
+    - 6225
+    - 6235
+    - 6240
+    - 6245
+    - 6255
+    - 6320
+    - 6345
+    - 6350
+    - 6355
+    - 6360
+    - 6365
+    - 6370
+    - 6390
+    - 6395
+    - 6590
+    - 6625
+    - 6630
+    - 6695
+    - 6700
+    - 6725
+    - 6740
+    - 6745
+    - 6775
+    - 6780
+    - 6830
+    - 6835
+    - 6955
+    - 6985
+    - 6990
+    - 7020
+    - 7025
+    - 7030
+    - 7235
+    - 7240
+    - 7245
+    - 7250
+    - 7255
+    - 7270
+    - 7280
+    - 7290
+    - 7295
+    - 7300
+    - 7305
+    - 7315
+    - 7320
+    - 7335
+    - 7355
+    - 7365
+    - 7375
+    - 7385
+    - 7400
+    - 7415
+    - 7425
+    - 7455
+    - 7470
+    - 7475
+    - 7480
+    - 7490
+    - 7500
+    - 7510
+    - 7515
+    - 7520
+    - 7525
+    - 7535
+    - 7540
+    - 7555
+    - 7560
+    - 7570
+    - 7575
+    - 7595
+    - 7600
+    - 7610
+    - 7620
+    - 7630
+    - 7635
+    - 7645
+    - 7655
+    - 7700
+    - 7710
+    - 7715
+    - 7720
+    - 7735
+    - 7740
+    - 7775
+    - 7800
+    - 7810
+    - 7815
+    - 7830
+    - 7835
+    - 7855
+    - 7860
+    - 7890
+    - 7895
+    - 7910
+    - 7915
+    - 7930
+    - 7945
+    - 7950
+    - 7955
+    - 7965
+    - 7980
+    - 7985
+    - 7990
+    - 7995
+    - 8000
+    - 8005
+    - 8010
+    - 8015
+    - 8020
+    - 8025
+    - 8030
+    - 8035
+    - 8050
+    - 8055
+    - 9600
+    - 9605
+    - 9635
+    - 9640
+    - 9650
+    - 9655
+    - 9680
+    - 9690
+    - 9700
+    - 9705
+    - 9720
+    - 9730
+    - 9735
+    - 9745
+    - 9750
+    - 9765
+    - 9770
+    - 9775
+    - 9780
+    - 9790
+    - 9795
+    - 9805
+    - 9810
+    - 9820
+    - 9825
+    - 9830
+    - 9840
+    - 9845
+    - 9855
+    - 9860
+    - 9865
+    - 9870
+    - 9875
+    - 9885
+    - 9895
+    - 9900
+    - 9910
+    - 9920
+    - 9925
+    - 9935
+    - 9940
+    - 9950
+    - 9955
+    - 9965
+    - 9970
+    - 9975
+    - 9985
+    - 9990
+    - 10000
+    - 10005
+    - 10030
+    - 10035
+    - 10045
+    - 10050
+    - 10060
+    - 10065
+    - 10070
+    - 10080
+    - 10085
+    - 10545
+    - 10550
+    - 10585
+    - 10590
+    - 10595
+    - 10600
+    - 10605
+    - 10610
+    - 10615
+    - 10640
+    - 10660
+    - 10670
+    - 10680
+    - 10685
+    - 10690
+    - 10695
+    - 10705
+    - 10715
+    - 10735
+    - 10740
+    - 10745
+    - 10760
+    - 10765
+    - 10770
+    - 10780
+    - 10790
+    - 10810
+    - 10815
+    - 10825
+    - 10830
+    - 10835
+    - 10840
+    - 10860
+    - 10870
+    - 10875
+    - 10885
+    - 10890
+    - 10900
+    - 10905
+    - 10910
+    - 10950
+    - 10955
+    - 10970
+    - 10980
+    - 10985
+    - 10990
+    - 13910
+    - 14285
+    - 14300
+    - 14305
+    - 14315
+    - 14320
+    - 14335
+    - 14340
+    - 14360
+    - 14375
+    - 14390
+    - 14395
+    - 14410
+    - 14415
+    - 14430
+    - 14440
+    - 14450
+    - 14455
+    - 14470
+    - 14480
+    - 14485
+    - 14490
+    - 14500
+    - 14505
+    - 14515
+    - 14520
+    - 14525
+    - 14530
+    - 14545
+    - 14555
+    - 14575
+    - 14580
+    - 14595
+    - 14605
+    - 14625
+    - 14630
+    - 14640
+    - 14660
+    - 14665
+    - 14700
+    - 14730
+    - 14755
+    - 14760
+    - 14790
+    - 14795
+    - 14805
+    - 14810
+    - 14830
+    - 14840
+    - 14905
+    - 14910
+    - 14915
+    - 14920
+    - 14925
+    - 14935
+    - 14955
+    - 14960
+    - 14970
+    - 14980
+    - 14985
+    - 14990
+    - 15370
+    - 15375
+    - 15395
+    - 15410
+    - 15425
+    - 15430
+    - 15435
+    - 15440
+    - 16275
+    - 16280
+    - 16290
+    - 16315
+    - 16340
+    - 16345
+    - 16350
+    - 16360
+    - 16365
+    - 16380
+    - 16385
+    - 16395
+    - 16400
+    - 16405
+    - 16410
+    - 16415
+    - 16420
+    - 16505
+    - 16525
+    - 16535
+    - 16545
+    - 16560
+    - 16565
+    - 16580
+    - 16600
+    - 16610
+    - 16615
+    - 16635
+    - 16640
+    - 16710
+    - 16715
+    - 16745
+    - 16755
+    - 16765
+    - 16775
+    - 16785
+    - 16790
+    - 16795
+    - 16800
+    - 16805
+    - 17740
+    - 17745
+    - 17755
+    - 17770
+    - 17785
+    - 17795
+    - 17800
+    - 17805
+    - 17830
+    - 17845
+    - 17855
+    - 17860
+    - 17870
+    - 17890
+    - 17895
+    - 17900
+    - 17910
+    - 17920
+    - 17925
+    - 17955
+    - 17960
+    - 17975
+    - 17985
+    - 17990
+    - 17995
+    - 18005
+    - 18015
+    - 18020
+    - 18025
+    - 18035
+    - 18045
+    - 18050
+    - 18055
+    - 18065
+    - 18070
+    - 18650
+    - 18655
+    - 18670
+    - 18675
+    - 18680
+    - 18685
+    - 18725
+    - 18730
+    - 18740
+    - 18750
+    - 18755
+    - 18760
+    - 18770
+    - 18775
+    - 18790
+    - 18795
+    - 18805
+    - 18810
+    - 18815
+    - 18825
+    - 18850
+    - 18855
+    - 18870
+    - 18875
+    - 18880
+    - 18905
+    - 18920
+    - 18940
+    - 18960
+    - 18970
+    - 18975
+    - 18985
+    - 18995
+    - 19005
+    - 19020
+    - 19025
+    - 19075
+    - 19090
+    - 19095
+    - 19110
+    - 19115
+    - 19120
+    - 19130
+    - 19145
+    - 19160
+    - 19170
+    - 19225
+    - 19235
+    - 19240
+    - 19245
+    - 19250
+    - 19255
+    - 19260
+    - 20480
+    - 20490
+    - 20540
+    - 20545
+    - 20550
+    - 20555
+    - 20560
+    - 20570
+    - 20590
+    - 20595
+    - 20600
+    - 20610
+    - 20615
+    - 20620
+    - 20630
+    - 20635
+    - 20645
+    - 20655
+    - 20665
+    - 20670
+    - 20705
+    - 20725
+    - 20730
+    - 20740
+    - 20745
+    - 20755
+    - 20765
+    - 20775
+    - 20780
+    - 20800
+    - 20805
+    - 20825
+    - 20830
+    - 20835
+    - 20845
+    - 20905
+    - 20915
+    - 20920
+    - 20930
+    - 20980
+    - 21010
+    - 21015
+    - 21050
+    - 21120
+    - 21125
+    - 21135
+    - 21140
+    - 21155
+    - 21160
+    - 21170
+    - 21175
+    - 21180
+    - 21190
+    - 21200
+    - 21210
+    - 21215
+    - 21220
+    - 21225
+    - 21245
+    - 21255
+    - 21510
+    - 21515
+    - 21520
+    - 21535
+    - 21545
+    - 21550
+    - 21565
+    - 21575
+    - 21585
+    - 21595
+    - 21610
+    - 21615
+    - 21620
+    - 21625
+    - 21635
+    - 21645
+    - 21660
+    - 21675
+    - 21680
+    - 21690
+    - 21700
+    - 21715
+    - 21720
+    - 21725
+    - 21735
+    - 21740
+    - 21750
+    - 21760
+    - 21765
+    - 21780
+    - 21785
+    - 21790
+    - 21795
+    - 21800
+    - 21810
+    - 21815
+    - 21820
+    - 21830
+    - 21835
+    - 21840
+    - 22200
+    - 22205
+    - 22215
+    - 22220
+    - 22440
+    - 22450
+    - 22480
+    - 22485
+    - 22500
+    - 22520
+    - 22525
+    - 22530
+    - 22540
+    - 22555
+    - 22565
+    - 22570
+    - 22585
+    - 22595
+    - 22600
+    - 22605
+    - 22610
+    - 22625
+    - 22650
+    - 22670
+    - 22695
+    - 22700
+    - 22705
+    - 22710
+    - 22735
+    - 22740
+    - 22745
+    - 22970
+    - 22975
+    - 22990
+    - 23000
+    - 23005
+    - 23015
+    - 23020
+    - 23030
+    - 23035
+    - 23040
+    - 23050
+    - 23055
+    - 23060
+    - 23065
+    - 23070
+    - 23125
+    - 23130
+    - 23145
+    - 23150
+    - 23160
+    - 23170
+    - 23175
+    - 23190
+    - 23195
+    - 23495
+    - 23520
+    - 23540
+    - 23545
+    - 23550
+    - 23565
+    - 23570
+    - 23595
+    - 23620
+    - 23625
+    - 23630
+    - 23635
+    - 23640
+    - 24910
+    - 24915
+    - 24935
+    - 24940
+    - 24960
+    - 24990
+    - 25000
+    - 25010
+    - 25020
+    - 25025
+    - 25030
+    - 25040
+    - 25045
+    - 25050
+    - 25070
+    - 25075
+    - 25085
+    - 25100
+    - 25120
+    - 25135
+    - 25145
+    - 25155
+    - 25160
+    - 25175
+    - 25180
+    - 25205
+    - 25210
+    - 26165
+    - 26170
+    - 26175
+    - 26185
+    - 26190
+    - 26205
+    - 26220
+    - 26235
+    - 26240
+    - 26245
+    - 26255
+    - 26275
+    - 26285
+    - 26290
+    - 26300
+    - 26305
+    - 26315
+    - 26330
+    - 26335
+    - 26345
+    - 26360
+    - 26385
+    - 26390
+    - 26405
+    - 26410
+    - 26415
+    - 26425
+    - 26430
+    - 26435
+    - 27795
+    - 27800
+    - 27825
+    - 27830
+    - 27840
+    - 27855
+    - 27865
+    - 27870
+    - 27875
+    - 27885
+    - 27895
+    - 27900
+    - 27910
+    - 27920
+    - 27930
+    - 27935
+    - 27945
+    - 27950
+    - 27955
+    - 27960
+    - 27970
+    - 27980
+    - 27985
+    - 28030
+    - 28040
+    - 28050
+    - 28070
+    - 28080
+    - 28085
+    - 28090
+    - 28100
+    - 28105
+    - 28120
+    - 28125
+    - 28130
+    - 28135
+    - 28140
+    - 28155
+    - 28160
+    - 28165
+    - 28175
+    - 28185
+    - 28190
+    - 28200
+    - 28205
+    - 28735
+    - 28740
+    - 28750
+    - 28755
+    - 28780
+    - 28785
+    - 28810
+    - 28820
+    - 28830
+    - 28835
+    - 28840
+    - 28845
+    - 28860
+    - 28865
+    - 28880
+    - 28890
+    - 28895
+    - 28905
+    - 28910
+    - 28925
+    - 28935
+    - 28940
+    - 28945
+    - 28965
+    - 28980
+    - 28990
+    - 28995
+    - 29000
+    - 29030
+    - 29040
+    - 29045
+    - 29055
+    - 29060
+    - 29075
+    - 29080
+    - 29105
+    - 29110
+    - 29250
+    - 29285
+    - 29290
+    - 29325
+    - 29330
+    - 29350
+    - 29355
+    - 29390
+    - 29395
+    - 29600
+    - 29810
+    - 29885
+    - 29890
+    ys:
+    - 0
+    - -923
+    - -960
+    - -964
+    - -691
+    - -641
+    - -541
+    - -501
+    - -496
+    - -464
+    - -455
+    - -428
+    - -387
+    - -337
+    - -323
+    - -264
+    - -255
+    - -241
+    - -237
+    - -205
+    - -178
+    - -173
+    - -146
+    - -141
+    - -46
+    - -28
+    - -1
+    - 27
+    - 45
+    - 0
+    - 0
+    - -291
+    - -132
+    - -78
+    - -55
+    - -36
+    - -27
+    - -18
+    - -18
+    - -13
+    - -13
+    - -9
+    - -9
+    - -4
+    - -128
+    - -96
+    - 0
+    - 0
+    - 360
+    - 163
+    - 77
+    - 28
+    - 6
+    - -10
+    - -28
+    - -26
+    - -21
+    - -13
+    - 37
+    - 151
+    - 191
+    - 210
+    - 232
+    - 246
+    - 260
+    - 260
+    - 241
+    - 201
+    - 191
+    - -488
+    - -524
+    - -523
+    - -528
+    - -441
+    - -419
+    - -288
+    - -270
+    - -254
+    - -236
+    - -231
+    - -222
+    - -204
+    - -199
+    - -181
+    - -168
+    - -168
+    - -59
+    - -27
+    - -13
+    - 14
+    - 23
+    - 46
+    - 60
+    - 60
+    - 23
+    - 14
+    - 1
+    - 0
+    - 0
+    - -254
+    - -166
+    - -152
+    - -70
+    - -57
+    - -48
+    - -30
+    - -20
+    - -11
+    - -7
+    - -2
+    - -2
+    - 11
+    - 11
+    - 16
+    - 16
+    - 11
+    - -7
+    - -20
+    - -20
+    - 0
+    - 0
+    - -333
+    - -345
+    - -368
+    - -352
+    - -351
+    - -302
+    - -291
+    - -287
+    - -220
+    - -193
+    - -189
+    - -157
+    - -152
+    - -102
+    - -39
+    - -20
+    - -11
+    - -11
+    - -7
+    - -2
+    - -2
+    - 2
+    - 11
+    - 11
+    - 16
+    - 25
+    - 30
+    - 30
+    - 0
+    - 0
+    - -154
+    - -64
+    - -34
+    - -25
+    - -20
+    - -16
+    - -16
+    - -20
+    - -25
+    - -25
+    - -30
+    - -30
+    - -34
+    - -34
+    - -48
+    - -48
+    - -59
+    - -75
+    - -84
+    - -84
+    - -102
+    - -104
+    - -116
+    - -120
+    - -128
+    - -134
+    - -143
+    - -144
+    - -150
+    - -139
+    - -140
+    - -66
+    - -44
+    - -24
+    - -6
+    - 13
+    - 13
+    - 5
+    - 8
+    - -2
+    - -2
+    - -16
+    - -16
+    - 0
+    - 0
+    - -227
+    - -184
+    - -176
+    - -136
+    - -121
+    - -110
+    - -108
+    - -116
+    - -116
+    - -120
+    - -120
+    - -93
+    - -89
+    - -89
+    - -80
+    - -80
+    - -70
+    - -66
+    - -57
+    - -66
+    - -66
+    - -61
+    - -16
+    - -16
+    - -11
+    - -11
+    - -7
+    - -7
+    - -2
+    - -2
+    - -7
+    - 39
+    - 11
+    - 11
+    - -16
+    - -20
+    - -20
+    - -11
+    - -7
+    - -7
+    - -2
+    - -2
+    - 2
+    - 2
+    - 7
+    - 7
+    - 2
+    - -2
+    - -2
+    - -20
+    - -20
+    - -16
+    - -11
+    - -11
+    - -7
+    - -7
+    - -2
+    - -2
+    - -7
+    - -11
+    - -11
+    - -16
+    - 0
+    - 0
+    - -22
+    - -27
+    - -29
+    - -30
+    - -30
+    - -20
+    - -20
+    - -16
+    - -16
+    - -11
+    - -11
+    - -7
+    - -7
+    - 7
+    - 11
+    - 11
+    - 20
+    - 21
+    - 13
+    - 6
+    - -28
+    - -41
+    - -45
+    - -40
+    - -43
+    - -34
+    - -34
+    - -30
+    - -30
+    - -25
+    - -25
+    - -20
+    - -20
+    - -16
+    - -16
+    - -7
+    - -2
+    - 2
+    - 2
+    - 11
+    - 11
+    - 15
+    - 14
+    - -14
+    - -76
+    - -87
+    - -91
+    - -90
+    - -80
+    - -80
+    - -48
+    - -30
+    - -16
+    - -16
+    - 2
+    - 2
+    - 25
+    - 25
+    - 57
+    - 61
+    - 70
+    - 70
+    - 84
+    - 89
+    - 93
+    - 93
+    - 102
+    - 102
+    - 107
+    - 108
+    - 112
+    - 121
+    - 135
+    - 152
+    - 172
+    - 195
+    - 221
+    - 248
+    - 277
+    - 365
+    - 0
+    - 0
+    - -154
+    - -118
+    - -115
+    - -112
+    - -111
+    - -111
+    - -98
+    - -93
+    - -84
+    - -75
+    - -70
+    - -57
+    - -52
+    - -43
+    - -39
+    - -34
+    - -32
+    - -25
+    - -25
+    - -20
+    - -18
+    - -11
+    - -11
+    - -7
+    - -2
+    - -2
+    - 7
+    - 7
+    - 11
+    - 16
+    - 16
+    - 25
+    - 25
+    - 34
+    - 36
+    - 48
+    - 52
+    - 57
+    - 61
+    - 66
+    - 70
+    - 80
+    - 84
+    - 84
+    - 89
+    - 93
+    - 102
+    - 102
+    - 107
+    - 108
+    - 112
+    - 135
+    - 152
+    - 195
+    - 221
+    - 248
+    - 307
+    - 0
+    - 0
+    - -150
+    - -53
+    - -43
+    - -34
+    - -28
+    - -23
+    - -21
+    - -20
+    - -20
+    - -25
+    - -34
+    - -34
+    - -39
+    - -39
+    - -43
+    - -43
+    - -48
+    - -66
+    - -66
+    - -75
+    - -84
+    - -84
+    - -89
+    - -102
+    - -116
+    - -161
+    - -175
+    - -270
+    - -272
+    - -557
+    - -570
+    - -616
+    - -624
+    - -625
+    - -618
+    - -605
+    - -577
+    - -558
+    - -537
+    - -327
+    - -278
+    - -239
+    - -216
+    - -216
+    - 0
+    - 0
+    - -4
+    - -9
+    - -13
+    - -13
+    - -18
+    - -18
+    - -22
+    - -22
+    - -31
+    - -31
+    - -36
+    - -36
+    - -40
+    - -40
+    - -49
+    - -49
+    - -54
+    - -54
+    - -59
+    - -59
+    - -63
+    - -63
+    - -68
+    - -68
+    - -72
+    - -72
+    - -77
+    - -77
+    - -81
+    - -99
+    - -99
+    - -118
+    - -120
+    - -149
+    - -149
+    - -168
+    - -186
+    - -195
+    - -222
+    - -245
+    - -263
+    - -263
+    - -290
+    - -299
+    - -304
+    - -304
+    - -327
+    - -339
+    - -508
+    - -518
+    - -526
+    - -533
+    - -533
+    - -527
+    - -513
+    - -504
+    - -499
+    - -486
+    - -468
+    - 0
+    - 0
+    - 1025
+    - 1003
+    - 992
+    - 987
+    - 982
+    - 982
+    - 0
+    - 0
+    - -579
+    - -475
+    - -381
+    - -252
+    - -225
+    - -206
+    - -174
+    - -163
+    - -145
+    - -145
+    - -131
+    - -122
+    - -118
+    - -109
+    - -95
+    - -90
+    - -86
+    - -81
+    - -77
+    - -72
+    - -59
+    - -59
+    - -31
+    - -13
+    - -13
+    - -9
+    - -9
+    - -4
+    - -4
+    - 91
+    - 91
+    - 93
+    - 103
+    - 126
+    - 156
+    - 172
+    - 392
+    - 401
+    - 0
+    - 0
+    - -212
+    - -264
+    - -330
+    - -369
+    - -369
+    - -378
+    - -377
+    - -331
+    - -245
+    - -204
+    - -81
+    - -68
+    - 5
+    - 19
+    - 32
+    - 82
+    - 105
+    - 110
+    - 111
+    - 109
+    - 117
+    - 129
+    - 131
+    - 138
+    - 126
+    - 40
+    - 24
+    - 12
+    - 3
+    - -5
+    - -4
+    - -13
+    - -18
+    - 0
+    - 0
+    - -9
+    - -9
+    - -13
+    - -20
+    - -29
+    - -167
+    - -180
+    - -197
+    - -211
+    - -210
+    - -188
+    - -176
+    - -176
+    - -118
+    - -109
+    - -27
+    - -18
+    - -13
+    - -4
+    - -4
+    - -231
+    - -249
+    - -268
+    - -318
+    - -318
+    - -287
+    - -268
+    - -236
+    - -217
+    - -46
+    - -20
+    - -6
+    - 4
+    - 5
+    - 10
+    - 10
+    - 1
+    - -136
+    - -154
+    - -177
+    - -186
+    - -190
+    - -195
+    - -188
+    - -173
+    - -32
+    - -13
+    - -7
+    - -2
+    - 0
+    - 1
+    - 1
+    - 0
+    - 36
+    - 303
+    - 326
+    - 347
+    - 359
+    - 359
+    - 345
+    - 264
+    - 255
+    - 255
+    - 219
+    - 187
+    - 178
+    - 41
+    - 19
+    - 1
+    - -4
+    - -4
+    - -9
+    - -9
+    - 10
+    - 10
+    - 51
+    - 123
+    - 160
+    - 169
+    - 169
+    - 173
+    - 173
+    - 178
+    - 178
+    - 182
+    - 180
+    - 173
+    - 29
+    - 14
+    - 8
+    - 1
+    - 5
+    - 1
+    - -4
+    - -4
+    - 0
+    - -562
+    - -538
+    - -544
+    - -495
+    - -484
+    - -463
+    - -459
+    - -445
+    - -445
+    - -422
+    - -409
+    - -399
+    - -395
+    - -4
+    - -4
+    - 1
+    - -4
+    - -18
+    - -18
+    - -13
+    - -4
+    - -4
+    - 14
+    - 17
+    - 28
+    - 32
+    - 51
+    - 51
+    - 60
+    - 64
+    - 78
+    - 78
+    - 105
+    - 114
+    - 128
+    - 137
+    - 155
+    - 160
+    - 173
+    - 178
+    - 187
+    - 187
+    - 201
+    - 210
+    - 219
+    - 219
+    - 232
+    - 237
+    - 241
+    - 241
+    - 264
+    - 266
+    - 1005
+    - 1096
+    - 1098
+    - 1200
+    - 1200
+    - 1082
+    - 1082
+    - 1200
+    - 1200
+    - 1196
+    - 1119
+    - 1116
+    - 1064
+    - 948
+    - 805
+    - 751
+    - 647
+    - 561
+    - 472
+    - 440
+    - 242
+    - 164
+    - 131
+    - 108
+    - 96
+    - 64
+    - 19
+    - 5
+    - 1
+    - -4
+    - -4
+    - -9
+    - -13
+    - -18
+    - 0
+    - 0
+    - -331
+    - -331
+    - -335
+    - -338
+    - -329
+    - -331
+    - -317
+    - -315
+    - -318
+    - -305
+    - -303
+    - -286
+    - -283
+    - -288
+    - -59
+    - -45
+    - -13
+    - -4
+    - 10
+    - 10
+    - 14
+    - 14
+    - 0
+    - 0
+    - -77
+    - -122
+    - -149
+    - -190
+    - -204
+    - -213
+    - -213
+    - -186
+    - -13
+    - -95
+    - -118
+    - 0
+    - 0
+    - -530
+    - -515
+    - -509
+    - -472
+    - -388
+    - -367
+    - -350
+    - -345
+    - -336
+    - -322
+    - -281
+    - -209
+    - -190
+    - -140
+    - -122
+    - -116
+    - -81
+    - -49
+    - -27
+    - -13
+    - -13
+    - -9
+    - 5
+    - 10
+    - 10
+    - 0
+    - 0
+    - 37
+    - 51
+    - 64
+    - 78
+    - 101
+    - 123
+    - 127
+    - 134
+    - 144
+    - 168
+    - 238
+    - 264
+    - 276
+    - 307
+    - -162
+    - -148
+    - -150
+    - -154
+    - -163
+    - -163
+    - -131
+    - -131
+    - -86
+    - -81
+    - -68
+    - -31
+    - -27
+    - 0
+    - 0
+    - -39
+    - -64
+    - -71
+    - -81
+    - -94
+    - -101
+    - -102
+    - -102
+    - -98
+    - -90
+    - -90
+    - -77
+    - -77
+    - -68
+    - -63
+    - -59
+    - -59
+    - -54
+    - -54
+    - -40
+    - -36
+    - -36
+    - 5
+    - 19
+    - 21
+    - 51
+    - 60
+    - 69
+    - 73
+    - 78
+    - 87
+    - 91
+    - 96
+    - 96
+    - 105
+    - 105
+    - 120
+    - 129
+    - 147
+    - 188
+    - 237
+    - 265
+    - 323
+    - 0
+    - 0
+    - 860
+    - 861
+    - 572
+    - 617
+    - 630
+    - 703
+    - 725
+    - 741
+    - 746
+    - 748
+    - 752
+    - 737
+    - 737
+    - 705
+    - 669
+    - 669
+    - 419
+    - 405
+    - 378
+    - 369
+    - 358
+    - 41
+    - 41
+    - 37
+    - 28
+    - 28
+    - 23
+    - 19
+    - 14
+    - 10
+    - 10
+    - 5
+    - 5
+    - 1
+    - 1
+    - -4
+    - -4
+    - 1
+    - 5
+    - 5
+    - 10
+    - 10
+    - 14
+    - 14
+    - 19
+    - 19
+    - 14
+    - 10
+    - 0
+    abbr: pitd
+- duration: 59520
+  name: Metal Sweep
+  comment: ""
+  track_no: 1
+  position: 0
+  notes:
+  - position: 0
+    duration: 720
+    tone: 74
+    lyric: qen't
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 720
+    duration: 240
+    tone: 75
+    lyric: My
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 960
+    duration: 720
+    tone: 74
+    lyric: faith
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 1680
+    duration: 240
+    tone: 75
+    lyric: My
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 1920
+    duration: 720
+    tone: 74
+    lyric: dread
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 2640
+    duration: 240
+    tone: 77
+    lyric: I'm
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 2880
+    duration: 240
+    tone: 74
+    lyric: standing
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 3120
+    duration: 240
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 3360
+    duration: 240
+    tone: 70
+    lyric: with
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 3600
+    duration: 240
+    tone: 69
+    lyric: myself
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 3840
+    duration: 360
+    tone: 58
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 110, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 4200
+    duration: 360
+    tone: 55
+    lyric: My
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 4560
+    duration: 240
+    tone: 61
+    lyric: own
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 4800
+    duration: 360
+    tone: 62
+    lyric: work
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 5160
+    duration: 360
+    tone: 65
+    lyric: A
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 5520
+    duration: 240
+    tone: 61
+    lyric: reflection
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 5760
+    duration: 240
+    tone: 58
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6000
+    duration: 240
+    tone: 55
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6240
+    duration: 240
+    tone: 54
+    lyric: of
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6480
+    duration: 240
+    tone: 55
+    lyric: my
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6720
+    duration: 240
+    tone: 57
+    lyric: thoughts
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6960
+    duration: 240
+    tone: 55
+    lyric: All
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7200
+    duration: 240
+    tone: 54
+    lyric: in
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7440
+    duration: 240
+    tone: 55
+    lyric: a
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7680
+    duration: 720
+    tone: 74
+    lyric: rush
+    pitch:
+      data:
+      - {x: -40, y: -190, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8400
+    duration: 240
+    tone: 75
+    lyric: The
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8640
+    duration: 720
+    tone: 74
+    lyric: blue
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 9360
+    duration: 240
+    tone: 75
+    lyric: It's
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 9600
+    duration: 720
+    tone: 74
+    lyric: gone
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 10320
+    duration: 240
+    tone: 77
+    lyric: A
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 10560
+    duration: 240
+    tone: 74
+    lyric: melody
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 10800
+    duration: 240
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 11040
+    duration: 240
+    tone: 74
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 11280
+    duration: 240
+    tone: 77
+    lyric: composed
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 11520
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 11880
+    duration: 360
+    tone: 66
+    lyric: By
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 12240
+    duration: 240
+    tone: 65
+    lyric: a
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 12480
+    duration: 360
+    tone: 66
+    lyric: version
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 12840
+    duration: 360
+    tone: 62
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 13200
+    duration: 240
+    tone: 61
+    lyric: of
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 13440
+    duration: 360
+    tone: 62
+    lyric: me
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 13800
+    duration: 360
+    tone: 55
+    lyric: that's
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 14160
+    duration: 240
+    tone: 61
+    lyric: no
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 14400
+    duration: 360
+    tone: 62
+    lyric: longer
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 14760
+    duration: 360
+    tone: 58
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 15120
+    duration: 240
+    tone: 60
+    lyric: with
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 15360
+    duration: 720
+    tone: 74
+    lyric: us
+    pitch:
+      data:
+      - {x: -40, y: -140, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 16080
+    duration: 240
+    tone: 75
+    lyric: A
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 16320
+    duration: 720
+    tone: 74
+    lyric: feint
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 17040
+    duration: 240
+    tone: 75
+    lyric: To
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 17280
+    duration: 720
+    tone: 74
+    lyric: vade
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 18000
+    duration: 240
+    tone: 77
+    lyric: To
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 18240
+    duration: 240
+    tone: 74
+    lyric: counter
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 18480
+    duration: 240
+    tone: 72
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 18720
+    duration: 240
+    tone: 70
+    lyric: every
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 18960
+    duration: 240
+    tone: 69
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 19200
+    duration: 360
+    tone: 70
+    lyric: attempt
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 19560
+    duration: 360
+    tone: 67
+    lyric: As
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 19920
+    duration: 240
+    tone: 73
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 20160
+    duration: 360
+    tone: 74
+    lyric: dare
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 20520
+    duration: 360
+    tone: 77
+    lyric: try
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 20880
+    duration: 240
+    tone: 73
+    lyric: speak
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 21120
+    duration: 240
+    tone: 70
+    lyric: up
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 21360
+    duration: 240
+    tone: 67
+    lyric: Against
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 21600
+    duration: 240
+    tone: 66
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 21840
+    duration: 240
+    tone: 67
+    lyric: the
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 22080
+    duration: 240
+    tone: 69
+    lyric: chains
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 22320
+    duration: 240
+    tone: 67
+    lyric: that
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 22560
+    duration: 240
+    tone: 66
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 22800
+    duration: 240
+    tone: 67
+    lyric: had
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 23040
+    duration: 720
+    tone: 74
+    lyric: made
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 23760
+    duration: 240
+    tone: 75
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 24000
+    duration: 720
+    tone: 74
+    lyric: made
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 24720
+    duration: 240
+    tone: 75
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 24960
+    duration: 720
+    tone: 74
+    lyric: made
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 25680
+    duration: 240
+    tone: 77
+    lyric: I
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 25920
+    duration: 240
+    tone: 74
+    lyric: made
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 26160
+    duration: 240
+    tone: 72
+    lyric: a
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 26400
+    duration: 240
+    tone: 74
+    lyric: huge
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 26640
+    duration: 240
+    tone: 77
+    lyric: mistake
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 26880
+    duration: 360
+    tone: 82
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 27240
+    duration: 360
+    tone: 78
+    lyric: by
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 27600
+    duration: 240
+    tone: 77
+    lyric: creating
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 27840
+    duration: 360
+    tone: 78
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 28200
+    duration: 360
+    tone: 74
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 28560
+    duration: 240
+    tone: 73
+    lyric: more
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 28800
+    duration: 360
+    tone: 74
+    lyric: insults
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 29160
+    duration: 360
+    tone: 67
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 29520
+    duration: 240
+    tone: 73
+    lyric: all
+    pitch:
+      data:
+      - {x: -40, y: -60, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 29760
+    duration: 360
+    tone: 74
+    lyric: towards
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 30120
+    duration: 360
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 30480
+    duration: 240
+    tone: 72
+    lyric: myself
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 30720
+    duration: 1920
+    tone: 70
+    lyric: +
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 32640
+    duration: 23040
+    tone: 82
+    lyric: a
+    pitch:
+      data:
+      - {x: -40, y: -120, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  curves:
+  - xs:
+    - -265
+    - -260
+    - -235
+    - -230
+    - -220
+    - -215
+    - -205
+    - -190
+    - -185
+    - -175
+    - -170
+    - -160
+    - -155
+    - -145
+    - -140
+    - -135
+    - -130
+    - -110
+    - -105
+    - -95
+    - -90
+    - -85
+    - -75
+    - -65
+    - -60
+    - -55
+    - -50
+    - -40
+    - -35
+    - -25
+    - -20
+    - -15
+    - -5
+    - 0
+    - 10
+    - 15
+    - 25
+    - 30
+    - 40
+    - 45
+    - 50
+    - 55
+    - 60
+    - 65
+    - 75
+    - 80
+    - 90
+    - 95
+    - 135
+    - 145
+    - 150
+    - 160
+    - 165
+    - 170
+    - 175
+    - 180
+    - 190
+    - 195
+    - 200
+    - 205
+    - 210
+    - 225
+    - 235
+    - 240
+    - 250
+    - 265
+    - 270
+    - 275
+    - 285
+    - 305
+    - 315
+    - 330
+    - 335
+    - 425
+    - 445
+    - 450
+    - 520
+    - 525
+    - 970
+    - 975
+    - 990
+    - 1000
+    - 1015
+    - 1025
+    - 1050
+    - 1070
+    - 1080
+    - 1105
+    - 1115
+    - 1150
+    - 1165
+    - 1185
+    - 1200
+    - 1210
+    - 1245
+    - 1260
+    - 1280
+    - 1285
+    - 1330
+    - 1335
+    - 1340
+    - 1350
+    - 1355
+    - 1375
+    - 1380
+    - 1390
+    - 1395
+    - 1400
+    - 1430
+    - 1445
+    - 1450
+    - 1460
+    - 1465
+    - 1470
+    - 1475
+    - 1495
+    - 1500
+    - 1505
+    - 1510
+    - 1515
+    - 1530
+    - 1535
+    - 1540
+    - 1555
+    - 1560
+    - 1565
+    - 1575
+    - 1605
+    - 1610
+    - 1620
+    - 1625
+    - 1635
+    - 1655
+    - 1660
+    - 1665
+    - 1880
+    - 1885
+    - 1940
+    - 1950
+    - 1955
+    - 1965
+    - 1995
+    - 2000
+    - 2010
+    - 2020
+    - 2040
+    - 2045
+    - 2070
+    - 2080
+    - 2090
+    - 2095
+    - 2110
+    - 2130
+    - 2145
+    - 2150
+    - 2155
+    - 2160
+    - 2165
+    - 2180
+    - 2190
+    - 2220
+    - 2225
+    - 2230
+    - 2235
+    - 2250
+    - 2260
+    - 2270
+    - 2275
+    - 2280
+    - 2290
+    - 2305
+    - 2325
+    - 2330
+    - 2335
+    - 2350
+    - 2355
+    - 2360
+    - 2365
+    - 2385
+    - 2390
+    - 2395
+    - 2400
+    - 2405
+    - 2410
+    - 2415
+    - 2420
+    - 2505
+    - 2555
+    - 2610
+    - 2620
+    - 2625
+    - 2630
+    - 2635
+    - 2660
+    - 2670
+    - 2680
+    - 2690
+    - 2735
+    - 2755
+    - 2765
+    - 2775
+    - 2780
+    - 2790
+    - 2795
+    - 2800
+    - 2810
+    - 2815
+    - 2820
+    - 2825
+    - 2835
+    - 2845
+    - 2860
+    - 2890
+    - 2900
+    - 2910
+    - 2915
+    - 2920
+    - 2925
+    - 2935
+    - 2940
+    - 2950
+    - 2955
+    - 2960
+    - 2965
+    - 2970
+    - 2975
+    - 2980
+    - 2985
+    - 2995
+    - 3000
+    - 3015
+    - 3020
+    - 3030
+    - 3035
+    - 3040
+    - 3045
+    - 3060
+    - 3065
+    - 3070
+    - 3075
+    - 3080
+    - 3085
+    - 3090
+    - 3100
+    - 3105
+    - 3110
+    - 3115
+    - 3120
+    - 3130
+    - 3135
+    - 3145
+    - 3155
+    - 3170
+    - 3180
+    - 3190
+    - 3200
+    - 3205
+    - 3210
+    - 3215
+    - 3225
+    - 3235
+    - 3240
+    - 3245
+    - 3250
+    - 3255
+    - 3260
+    - 3265
+    - 3270
+    - 3285
+    - 3295
+    - 3305
+    - 3315
+    - 3320
+    - 3325
+    - 3330
+    - 3360
+    - 3365
+    - 3375
+    - 3380
+    - 3385
+    - 3390
+    - 3395
+    - 3400
+    - 3405
+    - 3420
+    - 3425
+    - 3430
+    - 3435
+    - 3445
+    - 3455
+    - 3460
+    - 3465
+    - 3470
+    - 3475
+    - 3480
+    - 3490
+    - 3495
+    - 3500
+    - 3505
+    - 3510
+    - 3515
+    - 3530
+    - 3535
+    - 3540
+    - 3545
+    - 3550
+    - 3555
+    - 3560
+    - 3570
+    - 3575
+    - 3600
+    - 3605
+    - 3610
+    - 3615
+    - 3625
+    - 3640
+    - 3650
+    - 3660
+    - 3675
+    - 3680
+    - 3690
+    - 3695
+    - 3705
+    - 3710
+    - 3715
+    - 3720
+    - 3730
+    - 3740
+    - 3745
+    - 3750
+    - 3755
+    - 3765
+    - 3775
+    - 3780
+    - 3785
+    - 3790
+    - 3795
+    - 3810
+    - 3820
+    - 3825
+    - 3835
+    - 3845
+    - 3850
+    - 3855
+    - 3960
+    - 3965
+    - 3975
+    - 3990
+    - 3995
+    - 4000
+    - 4010
+    - 4025
+    - 4035
+    - 4040
+    - 4045
+    - 4060
+    - 4065
+    - 4070
+    - 4075
+    - 4090
+    - 4095
+    - 4105
+    - 4110
+    - 7160
+    - 7165
+    - 7180
+    - 7190
+    - 7195
+    - 7205
+    - 7225
+    - 7235
+    - 7240
+    - 7250
+    - 7260
+    - 7265
+    - 7275
+    - 7280
+    - 7285
+    - 7290
+    - 7300
+    - 7315
+    - 7320
+    - 7325
+    - 7335
+    - 7340
+    - 7345
+    - 7350
+    - 7355
+    - 7360
+    - 7370
+    - 7375
+    - 7385
+    - 7390
+    - 7400
+    - 7405
+    - 7410
+    - 7415
+    - 7430
+    - 7435
+    - 7440
+    - 7445
+    - 7450
+    - 7455
+    - 7645
+    - 7660
+    - 7670
+    - 7675
+    - 7700
+    - 7705
+    - 7715
+    - 7720
+    - 7725
+    - 7730
+    - 7750
+    - 7770
+    - 7785
+    - 7795
+    - 7800
+    - 7810
+    - 7815
+    - 7845
+    - 7855
+    - 7865
+    - 7870
+    - 7890
+    - 7900
+    - 7920
+    - 7930
+    - 7935
+    - 7955
+    - 7960
+    - 7975
+    - 7990
+    - 8000
+    - 8005
+    - 8030
+    - 8035
+    - 8040
+    - 8045
+    - 8050
+    - 8055
+    - 8085
+    - 8100
+    - 8110
+    - 8115
+    - 8135
+    - 8145
+    - 8165
+    - 8170
+    - 8175
+    - 8190
+    - 8200
+    - 8220
+    - 8225
+    - 8230
+    - 8240
+    - 8250
+    - 8270
+    - 8275
+    - 8285
+    - 8295
+    - 8305
+    - 8310
+    - 8315
+    - 8320
+    - 8325
+    - 8335
+    - 8360
+    - 8375
+    - 8380
+    - 8620
+    - 8625
+    - 8665
+    - 8675
+    - 8680
+    - 8715
+    - 8720
+    - 8735
+    - 8745
+    - 8755
+    - 8770
+    - 8800
+    - 8810
+    - 8820
+    - 8825
+    - 8830
+    - 8845
+    - 8855
+    - 8865
+    - 8870
+    - 8880
+    - 8885
+    - 8905
+    - 8910
+    - 8915
+    - 8925
+    - 8935
+    - 8940
+    - 8955
+    - 8960
+    - 8975
+    - 8980
+    - 8985
+    - 8995
+    - 9000
+    - 9005
+    - 9010
+    - 9030
+    - 9035
+    - 9040
+    - 9045
+    - 9060
+    - 9070
+    - 9075
+    - 9080
+    - 9085
+    - 9105
+    - 9115
+    - 9120
+    - 9125
+    - 9135
+    - 9140
+    - 9155
+    - 9160
+    - 9175
+    - 9180
+    - 9190
+    - 9195
+    - 9210
+    - 9215
+    - 9235
+    - 9240
+    - 9280
+    - 9290
+    - 9310
+    - 9320
+    - 9345
+    - 9350
+    - 9465
+    - 9470
+    - 9500
+    - 9555
+    - 9620
+    - 9680
+    - 9730
+    - 9770
+    - 9935
+    - 9950
+    - 9955
+    - 9960
+    - 9965
+    - 9980
+    - 9985
+    - 9990
+    - 10005
+    - 10015
+    - 10020
+    - 10025
+    - 10045
+    - 10050
+    - 10080
+    - 10090
+    - 10155
+    - 10160
+    - 10170
+    - 10175
+    - 10180
+    - 10185
+    - 10195
+    - 10200
+    - 10565
+    - 10570
+    - 10580
+    - 10585
+    - 10595
+    - 10600
+    - 10610
+    - 10615
+    - 10635
+    - 10670
+    - 10680
+    - 11075
+    - 11080
+    - 11090
+    - 11175
+    - 11180
+    - 11495
+    - 11500
+    - 11520
+    - 11530
+    - 11575
+    - 11580
+    - 12830
+    - 12835
+    - 12860
+    - 12875
+    - 12885
+    - 12890
+    - 12920
+    - 12930
+    - 12970
+    - 12975
+    - 13005
+    - 13010
+    - 13035
+    - 13040
+    - 13060
+    - 13065
+    - 13100
+    - 13105
+    - 13120
+    - 13125
+    - 13150
+    - 13160
+    - 13175
+    - 13185
+    - 13190
+    - 13220
+    - 13225
+    - 13235
+    - 13240
+    - 13250
+    - 13265
+    - 13275
+    - 13285
+    - 13290
+    - 13300
+    - 13325
+    - 13330
+    - 13340
+    - 13345
+    - 13350
+    - 13355
+    - 13360
+    - 13365
+    - 13370
+    - 13380
+    - 13385
+    - 13395
+    - 13405
+    - 13410
+    - 13430
+    - 13435
+    - 13465
+    - 13475
+    - 13480
+    - 13490
+    - 13690
+    - 13695
+    - 13700
+    - 13710
+    - 13715
+    - 13725
+    - 13730
+    - 13740
+    - 13745
+    - 13750
+    - 13755
+    - 13760
+    - 13765
+    - 13770
+    - 13775
+    - 13780
+    - 13815
+    - 13820
+    - 13835
+    - 13840
+    - 13850
+    - 13855
+    - 13865
+    - 13870
+    - 13880
+    - 13885
+    - 13890
+    - 13900
+    - 13910
+    - 13915
+    - 14035
+    - 14060
+    - 14065
+    - 14070
+    - 14075
+    - 14085
+    - 14090
+    - 14130
+    - 14135
+    - 14140
+    - 14165
+    - 14175
+    - 14180
+    - 14185
+    - 14195
+    - 14205
+    - 14210
+    - 14775
+    - 14780
+    - 14795
+    - 14800
+    - 14805
+    - 14820
+    - 14840
+    - 14850
+    - 14855
+    - 14880
+    - 14885
+    - 14900
+    - 14905
+    - 14910
+    - 14920
+    - 14925
+    - 14935
+    - 14955
+    - 14960
+    - 14965
+    - 14975
+    - 14985
+    - 14990
+    - 14995
+    - 15005
+    - 15015
+    - 15020
+    - 15030
+    - 15035
+    - 15045
+    - 15050
+    - 15060
+    - 15070
+    - 15080
+    - 15100
+    - 15110
+    - 15115
+    - 15120
+    - 15125
+    - 15130
+    - 15140
+    - 15150
+    - 15165
+    - 15170
+    - 15175
+    - 15180
+    - 15185
+    - 15190
+    - 15195
+    - 15210
+    - 15215
+    - 15220
+    - 15225
+    - 15235
+    - 15240
+    - 15245
+    - 15250
+    - 15255
+    - 15260
+    - 15290
+    - 15295
+    - 15305
+    - 15315
+    - 15330
+    - 15335
+    - 15355
+    - 15360
+    - 15385
+    - 15395
+    - 15400
+    - 15410
+    - 15415
+    - 15470
+    - 15495
+    - 15510
+    - 15520
+    - 15535
+    - 15540
+    - 15570
+    - 15575
+    - 15590
+    - 15615
+    - 15640
+    - 15645
+    - 15660
+    - 15670
+    - 15675
+    - 15685
+    - 15715
+    - 15720
+    - 15755
+    - 15760
+    - 15765
+    - 15770
+    - 15780
+    - 15785
+    - 15795
+    - 15800
+    - 15820
+    - 15825
+    - 15830
+    - 15840
+    - 15850
+    - 15865
+    - 15870
+    - 15880
+    - 15885
+    - 15895
+    - 15900
+    - 15910
+    - 15915
+    - 15920
+    - 15930
+    - 15935
+    - 15945
+    - 15950
+    - 15960
+    - 15965
+    - 15970
+    - 15975
+    - 16015
+    - 16020
+    - 16030
+    - 16040
+    - 16055
+    - 16060
+    - 16255
+    - 16260
+    - 16305
+    - 16315
+    - 16335
+    - 16345
+    - 16350
+    - 16370
+    - 16380
+    - 16385
+    - 16415
+    - 16425
+    - 16440
+    - 16460
+    - 16470
+    - 16480
+    - 16485
+    - 16515
+    - 16520
+    - 16540
+    - 16570
+    - 16575
+    - 16590
+    - 16595
+    - 16605
+    - 16620
+    - 16630
+    - 16635
+    - 16645
+    - 16665
+    - 16670
+    - 16675
+    - 16690
+    - 16700
+    - 16710
+    - 16715
+    - 16725
+    - 16730
+    - 16740
+    - 16745
+    - 16755
+    - 16760
+    - 16765
+    - 16770
+    - 16785
+    - 16790
+    - 16800
+    - 16810
+    - 16815
+    - 16825
+    - 16830
+    - 16835
+    - 16840
+    - 16850
+    - 16855
+    - 16860
+    - 16865
+    - 16870
+    - 16875
+    - 16880
+    - 16890
+    - 16895
+    - 16900
+    - 16910
+    - 16935
+    - 16965
+    - 16995
+    - 17085
+    - 17090
+    - 17095
+    - 17180
+    - 17185
+    - 17245
+    - 17250
+    - 17305
+    - 17310
+    - 17320
+    - 17330
+    - 17450
+    - 17475
+    - 17495
+    - 17515
+    - 17540
+    - 17550
+    - 17565
+    - 17580
+    - 17585
+    - 17600
+    - 17620
+    - 17625
+    - 17635
+    - 17640
+    - 17655
+    - 17675
+    - 17685
+    - 17690
+    - 17695
+    - 17705
+    - 17710
+    - 17720
+    - 17725
+    - 17735
+    - 17755
+    - 17760
+    - 17765
+    - 17770
+    - 17780
+    - 17785
+    - 17790
+    - 17795
+    - 17800
+    - 17810
+    - 17815
+    - 17820
+    - 17825
+    - 17855
+    - 17860
+    - 17865
+    - 17875
+    - 17885
+    - 17890
+    - 17900
+    - 17915
+    - 17925
+    - 17935
+    - 17940
+    - 17955
+    - 17965
+    - 17975
+    - 17980
+    - 17990
+    - 17995
+    - 18000
+    - 18025
+    - 18035
+    - 18040
+    - 18055
+    - 18060
+    - 18075
+    - 18080
+    - 18085
+    - 18090
+    - 19410
+    - 19415
+    - 19420
+    - 19435
+    - 19440
+    - 19445
+    - 19450
+    - 19455
+    - 19470
+    - 19475
+    - 19490
+    - 19495
+    - 19510
+    - 19515
+    - 19525
+    - 19545
+    - 19560
+    - 19565
+    - 20420
+    - 20425
+    - 20455
+    - 20480
+    - 20485
+    - 20505
+    - 20510
+    - 20545
+    - 20550
+    - 20555
+    - 20560
+    - 20565
+    - 20655
+    - 20665
+    - 20675
+    - 20690
+    - 20695
+    - 20700
+    - 20705
+    - 20710
+    - 20715
+    - 20730
+    - 20735
+    - 20745
+    - 20750
+    - 20755
+    - 23020
+    - 23025
+    - 23060
+    - 23070
+    - 23075
+    - 23085
+    - 23090
+    - 23105
+    - 23125
+    - 23135
+    - 23155
+    - 23160
+    - 23165
+    - 23170
+    - 23180
+    - 23185
+    - 23190
+    - 23195
+    - 23200
+    - 23205
+    - 23210
+    - 23235
+    - 23245
+    - 23250
+    - 23255
+    - 23260
+    - 23265
+    - 23270
+    - 23280
+    - 23285
+    - 23290
+    - 23295
+    - 23300
+    - 23310
+    - 23315
+    - 23320
+    - 23325
+    - 23330
+    - 23345
+    - 23350
+    - 23360
+    - 23365
+    - 23370
+    - 23375
+    - 23385
+    - 23390
+    - 23430
+    - 23435
+    - 23445
+    - 23460
+    - 23475
+    - 23480
+    - 23500
+    - 23505
+    - 23510
+    - 23515
+    - 23520
+    - 23530
+    - 23535
+    - 23540
+    - 23545
+    - 23560
+    - 23565
+    - 23570
+    - 23575
+    - 23580
+    - 23590
+    - 23595
+    - 23600
+    - 23605
+    - 23610
+    - 23615
+    - 23625
+    - 23630
+    - 23645
+    - 23650
+    - 23660
+    - 23665
+    - 23670
+    - 23675
+    - 23710
+    - 23715
+    - 23720
+    - 23950
+    - 23955
+    - 24160
+    - 24210
+    - 24245
+    - 24255
+    - 24295
+    - 24315
+    - 24325
+    - 24330
+    - 24340
+    - 24350
+    - 24375
+    - 24380
+    - 24390
+    - 24410
+    - 24425
+    - 24435
+    - 24440
+    - 24455
+    - 24475
+    - 24490
+    - 24500
+    - 24520
+    - 24525
+    - 24530
+    - 24535
+    - 24550
+    - 24555
+    - 24560
+    - 24570
+    - 24580
+    - 24585
+    - 24605
+    - 24610
+    - 24625
+    - 24630
+    - 24640
+    - 24645
+    - 24655
+    - 24660
+    - 24665
+    - 24675
+    - 24700
+    - 24705
+    - 24715
+    - 24720
+    - 24965
+    - 24970
+    - 24975
+    - 24980
+    - 24995
+    - 25005
+    - 25015
+    - 25025
+    - 25065
+    - 25090
+    - 25110
+    - 25115
+    - 25355
+    - 25360
+    - 26870
+    - 26875
+    - 26885
+    - 26910
+    - 26925
+    - 26935
+    - 26945
+    - 26955
+    - 26960
+    - 26965
+    - 26970
+    - 26975
+    - 26980
+    - 26985
+    - 26995
+    - 27000
+    - 27010
+    - 27020
+    - 27035
+    - 27045
+    - 30695
+    - 30700
+    - 30730
+    - 30735
+    - 30740
+    - 30750
+    - 30755
+    - 30770
+    - 30775
+    - 30785
+    - 30795
+    - 30800
+    - 30805
+    - 30810
+    - 30815
+    - 30820
+    - 30830
+    - 30835
+    - 30845
+    - 30850
+    - 30870
+    - 30885
+    - 30890
+    - 30895
+    - 30910
+    - 30920
+    - 30925
+    - 30930
+    - 30935
+    - 30940
+    - 30945
+    - 30960
+    - 30965
+    - 30980
+    - 30985
+    - 30990
+    - 30995
+    - 31000
+    - 31005
+    - 31035
+    - 31040
+    - 31045
+    - 31070
+    - 31075
+    - 31085
+    - 31090
+    - 31110
+    - 31125
+    - 31130
+    - 31135
+    - 31185
+    - 31190
+    - 31200
+    - 31285
+    - 31290
+    - 31345
+    - 31350
+    - 31365
+    - 31370
+    - 31375
+    - 31380
+    - 31385
+    - 31390
+    - 31405
+    - 31455
+    - 31500
+    - 31505
+    - 31530
+    - 31540
+    - 31590
+    - 31595
+    - 31620
+    - 31625
+    - 31630
+    - 31640
+    - 31650
+    - 31655
+    - 31665
+    - 31670
+    - 31675
+    - 31685
+    - 31690
+    - 31700
+    - 31705
+    - 31710
+    - 31715
+    - 31720
+    - 31725
+    - 31730
+    - 31740
+    - 31750
+    - 31755
+    - 31760
+    - 31765
+    - 31775
+    - 31785
+    - 31790
+    - 31795
+    - 31800
+    - 31810
+    - 31820
+    - 31825
+    - 31830
+    - 31835
+    - 31840
+    - 31845
+    - 31865
+    - 31870
+    - 31875
+    - 31885
+    - 31900
+    - 31905
+    - 31910
+    - 31920
+    - 31935
+    - 31940
+    - 31945
+    - 31965
+    - 31975
+    - 31980
+    - 31985
+    - 31990
+    - 31995
+    - 32000
+    - 32005
+    - 32010
+    - 32015
+    - 32020
+    - 32025
+    - 32030
+    - 32040
+    - 32045
+    - 32050
+    - 32055
+    - 32065
+    - 32105
+    - 32110
+    - 32115
+    - 32125
+    - 32130
+    - 32145
+    - 32150
+    - 32205
+    - 32210
+    - 32225
+    - 32235
+    - 32240
+    - 32275
+    - 32280
+    - 32290
+    - 32295
+    - 32300
+    - 32305
+    - 32310
+    - 32335
+    - 32340
+    - 32380
+    - 32410
+    - 32415
+    - 32420
+    - 32425
+    - 32435
+    - 32440
+    - 32450
+    - 32455
+    - 32505
+    - 32510
+    - 32515
+    - 32520
+    - 32585
+    - 32590
+    - 32640
+    - 32645
+    - 32650
+    - 32655
+    - 32660
+    - 32740
+    - 32745
+    - 32760
+    - 32765
+    - 32785
+    - 32790
+    - 32950
+    - 32955
+    - 32960
+    - 32970
+    - 32975
+    - 32980
+    - 32985
+    - 33010
+    - 33015
+    - 33035
+    - 33040
+    - 33060
+    - 33065
+    - 33070
+    - 33075
+    - 33130
+    - 33135
+    - 33140
+    - 33220
+    - 33225
+    - 33235
+    - 33240
+    - 33305
+    - 33310
+    - 33320
+    - 33325
+    - 33350
+    - 33420
+    - 33425
+    - 33435
+    - 33440
+    - 33470
+    - 33475
+    - 33480
+    - 33495
+    - 33500
+    - 33530
+    - 33545
+    - 33550
+    - 33585
+    - 33590
+    - 33595
+    - 33600
+    - 33605
+    - 33615
+    - 33620
+    - 33635
+    - 33640
+    - 33695
+    - 33700
+    - 33710
+    - 33715
+    - 33740
+    - 33745
+    - 33755
+    - 33775
+    - 33780
+    - 33820
+    - 33825
+    - 33870
+    - 33875
+    - 33880
+    - 33960
+    - 33965
+    - 33985
+    - 34005
+    - 34020
+    - 34040
+    - 34045
+    - 34160
+    - 34165
+    - 34195
+    - 34200
+    - 34280
+    - 34285
+    - 34295
+    - 34300
+    - 34310
+    - 34315
+    - 34370
+    - 34375
+    - 34390
+    - 34405
+    - 34410
+    - 34420
+    - 34425
+    - 34430
+    - 34440
+    - 34445
+    - 34450
+    - 34550
+    - 34555
+    - 34570
+    - 34575
+    - 34580
+    - 34595
+    - 34600
+    - 34635
+    - 34640
+    - 34650
+    - 34655
+    - 34670
+    - 34675
+    - 34685
+    - 34690
+    - 34855
+    - 34860
+    - 34870
+    - 34875
+    - 34940
+    - 34945
+    - 35140
+    - 35195
+    - 35200
+    - 35210
+    - 35215
+    - 35275
+    - 35280
+    - 35290
+    - 35325
+    - 35345
+    - 35410
+    - 35455
+    - 35460
+    - 35480
+    - 35485
+    - 35500
+    - 35505
+    - 35555
+    - 35560
+    - 35575
+    - 35580
+    - 35585
+    - 35620
+    - 35630
+    - 35650
+    - 35655
+    - 35775
+    - 35815
+    - 35820
+    - 35830
+    - 35835
+    - 35840
+    - 35850
+    - 35880
+    - 35885
+    - 35920
+    - 35925
+    - 35945
+    - 35950
+    - 35955
+    - 35960
+    - 35965
+    - 35970
+    - 35975
+    - 36045
+    - 36050
+    - 36060
+    - 36070
+    - 36075
+    - 36130
+    - 36135
+    - 36150
+    - 36185
+    - 36190
+    - 36200
+    - 36205
+    - 36215
+    - 36220
+    - 36230
+    - 36235
+    - 36250
+    - 36255
+    - 36260
+    - 36265
+    - 36295
+    - 36305
+    - 36315
+    - 36320
+    - 36330
+    - 36335
+    - 36360
+    - 36365
+    - 36375
+    - 36380
+    - 36390
+    - 36395
+    - 36415
+    - 36420
+    - 36445
+    - 36450
+    - 36465
+    - 36470
+    - 36475
+    - 36515
+    - 36520
+    - 36530
+    - 36535
+    - 36575
+    - 36605
+    - 36610
+    - 36625
+    - 36630
+    - 36650
+    - 36655
+    - 36680
+    - 36685
+    - 36695
+    - 36700
+    - 36705
+    - 36715
+    - 36775
+    - 36780
+    - 36790
+    - 36795
+    - 36800
+    - 36820
+    - 36825
+    - 36835
+    - 36840
+    - 36890
+    - 36895
+    - 36955
+    - 36960
+    - 36985
+    - 36990
+    - 37030
+    - 37045
+    - 37060
+    - 37070
+    - 37090
+    - 37095
+    - 37140
+    - 37155
+    - 37165
+    - 37170
+    - 37195
+    - 37205
+    - 37210
+    - 37240
+    - 37255
+    - 37265
+    - 37270
+    - 37280
+    - 37300
+    - 37305
+    - 37310
+    - 37320
+    - 37325
+    - 37335
+    - 37340
+    - 37365
+    - 37370
+    - 37380
+    - 37385
+    - 37405
+    - 37410
+    - 37420
+    - 37425
+    - 37450
+    - 37455
+    - 37465
+    - 37470
+    - 37495
+    - 37510
+    - 37515
+    - 37630
+    - 37635
+    - 37640
+    - 37665
+    - 37680
+    - 37685
+    - 37695
+    - 37700
+    - 37710
+    - 37715
+    - 37725
+    - 37730
+    - 37740
+    - 37745
+    - 37750
+    - 37790
+    - 37795
+    - 37800
+    - 37810
+    - 37815
+    - 37820
+    - 37835
+    - 37840
+    - 37845
+    - 37850
+    - 37855
+    - 37860
+    - 37870
+    - 37875
+    - 37880
+    - 37885
+    - 37910
+    - 37925
+    - 37930
+    - 37940
+    - 37945
+    - 37955
+    - 37965
+    - 37970
+    - 37980
+    - 37985
+    - 38045
+    - 38055
+    - 38060
+    - 38065
+    - 38075
+    - 38080
+    - 38085
+    - 38145
+    - 38230
+    - 38275
+    - 38280
+    - 38290
+    - 38300
+    - 38310
+    - 38320
+    - 38325
+    - 38330
+    - 38360
+    - 38365
+    - 38385
+    - 38390
+    - 38400
+    - 38405
+    - 38415
+    - 38455
+    - 38460
+    - 38470
+    - 38475
+    - 38500
+    - 38520
+    - 38530
+    - 38535
+    - 38545
+    - 38560
+    - 38570
+    - 38575
+    - 38800
+    - 38805
+    - 38815
+    - 38820
+    - 38830
+    - 38835
+    - 38850
+    - 38855
+    - 38985
+    - 38990
+    - 39000
+    - 39005
+    - 39015
+    - 39020
+    - 39045
+    - 39060
+    - 39065
+    - 39075
+    - 39080
+    - 39090
+    - 39100
+    - 39105
+    - 39115
+    - 39120
+    - 39130
+    - 39135
+    - 39145
+    - 39150
+    - 39175
+    - 39180
+    - 39195
+    - 39220
+    - 39250
+    - 39255
+    - 39260
+    - 39270
+    - 39275
+    - 39280
+    - 39305
+    - 39320
+    - 39325
+    - 39475
+    - 39480
+    - 39485
+    - 39495
+    - 39500
+    - 39510
+    - 39515
+    - 39525
+    - 39530
+    - 39590
+    - 39595
+    - 39610
+    - 39620
+    - 39625
+    - 39635
+    - 39645
+    - 39650
+    - 39675
+    - 39680
+    - 39690
+    - 39695
+    - 39705
+    - 39710
+    - 39720
+    - 39725
+    - 39735
+    - 39740
+    - 39745
+    - 39755
+    - 39760
+    - 39765
+    - 39770
+    - 39780
+    - 39785
+    - 39795
+    - 39805
+    - 39810
+    - 39820
+    - 39825
+    - 39840
+    - 39850
+    - 39860
+    - 39865
+    - 39875
+    - 39880
+    - 39890
+    - 39895
+    - 39905
+    - 39910
+    - 39915
+    - 40065
+    - 40070
+    - 40090
+    - 40100
+    - 40105
+    - 40110
+    - 40150
+    - 40155
+    - 40165
+    - 40170
+    - 40200
+    - 40210
+    - 40235
+    - 40240
+    - 40255
+    - 40300
+    - 40310
+    - 40340
+    - 40355
+    - 40415
+    - 40425
+    - 40465
+    - 40470
+    - 40495
+    - 40500
+    - 40555
+    - 40600
+    - 40645
+    - 40655
+    - 40685
+    - 40710
+    - 40715
+    - 40725
+    - 40730
+    - 40740
+    - 40745
+    - 40755
+    - 40765
+    - 40770
+    - 40795
+    - 40800
+    - 40815
+    - 40820
+    - 40940
+    - 40945
+    - 40970
+    - 40975
+    - 40980
+    - 40985
+    - 41000
+    - 41030
+    - 41040
+    - 41045
+    - 41055
+    - 41065
+    - 41130
+    - 41175
+    - 41190
+    - 41215
+    - 41230
+    - 41260
+    - 41345
+    - 41350
+    - 41360
+    - 41370
+    - 41375
+    - 41390
+    - 41395
+    - 41465
+    - 41480
+    - 41495
+    - 41500
+    - 41530
+    - 41535
+    - 41540
+    - 41590
+    - 41595
+    - 41625
+    - 41650
+    - 41665
+    - 41670
+    - 41680
+    - 41685
+    - 41705
+    - 41710
+    - 41715
+    - 41720
+    - 41735
+    - 41740
+    - 41955
+    - 41960
+    - 41965
+    - 41970
+    - 42070
+    - 42085
+    - 42090
+    - 42110
+    - 42115
+    - 42140
+    - 42145
+    - 42150
+    - 42155
+    - 42185
+    - 42195
+    - 42200
+    - 42205
+    - 42220
+    - 42245
+    - 42250
+    - 42260
+    - 42265
+    - 42275
+    - 42280
+    - 42290
+    - 42295
+    - 42310
+    - 42315
+    - 42415
+    - 42420
+    - 42450
+    - 42455
+    - 42700
+    - 42780
+    - 42820
+    - 42835
+    - 42900
+    - 42930
+    - 43065
+    - 43215
+    - 43295
+    - 43425
+    - 43430
+    - 43435
+    - 43440
+    - 43450
+    - 43455
+    - 43480
+    - 43495
+    - 43505
+    - 43510
+    - 43520
+    - 43525
+    - 43530
+    - 43535
+    - 43545
+    - 43550
+    - 43560
+    - 43565
+    - 43575
+    - 43580
+    - 43585
+    - 43590
+    - 43600
+    - 43605
+    - 43615
+    - 43620
+    - 43625
+    - 43630
+    - 43640
+    - 43645
+    - 43655
+    - 43660
+    - 43665
+    - 43670
+    - 43680
+    - 43685
+    - 43695
+    - 43700
+    - 43710
+    - 43715
+    - 43720
+    - 43725
+    - 43750
+    - 43755
+    - 43760
+    - 43765
+    - 43775
+    - 43790
+    - 43795
+    - 43805
+    - 43810
+    - 43815
+    - 43820
+    - 43830
+    - 43835
+    - 43845
+    - 43850
+    - 43855
+    - 43860
+    - 43870
+    - 43875
+    - 43885
+    - 43890
+    - 43895
+    - 43900
+    - 43915
+    - 43925
+    - 43930
+    - 43940
+    - 43945
+    - 43950
+    - 43955
+    - 43970
+    - 43980
+    - 43995
+    - 44005
+    - 44010
+    - 44030
+    - 44035
+    - 44045
+    - 44050
+    - 44060
+    - 44065
+    - 44075
+    - 44080
+    - 44085
+    - 44090
+    - 44100
+    - 44105
+    - 44115
+    - 44120
+    - 44140
+    - 44145
+    - 44155
+    - 44160
+    - 44195
+    - 44200
+    - 44210
+    - 44215
+    - 44220
+    - 44225
+    - 44250
+    - 44265
+    - 44275
+    - 44280
+    - 44285
+    - 44295
+    - 44305
+    - 44310
+    - 44320
+    - 44340
+    - 44345
+    - 44360
+    - 44380
+    - 44430
+    - 44450
+    - 44455
+    - 44480
+    - 44490
+    - 44515
+    - 44530
+    - 44535
+    - 44540
+    - 44580
+    - 44585
+    - 44600
+    - 44625
+    - 44635
+    - 44640
+    - 44660
+    - 44665
+    - 44670
+    - 44675
+    - 44685
+    - 44695
+    - 44700
+    - 44710
+    - 44720
+    - 44725
+    - 44730
+    - 44735
+    - 44745
+    - 44750
+    - 44760
+    - 44780
+    - 44785
+    - 44795
+    - 44800
+    - 44805
+    - 44810
+    - 44830
+    - 44835
+    - 44855
+    - 44860
+    - 44880
+    - 44885
+    - 44895
+    - 44910
+    - 44925
+    - 44930
+    - 44950
+    - 44955
+    - 44975
+    - 44980
+    - 44990
+    - 44995
+    - 45005
+    - 45025
+    - 45030
+    - 45055
+    - 45065
+    - 45105
+    - 45130
+    - 45135
+    - 45140
+    - 45150
+    - 45155
+    - 45165
+    - 45170
+    - 45175
+    - 45195
+    - 45200
+    - 45210
+    - 45215
+    - 45220
+    - 45225
+    - 45235
+    - 45240
+    - 45250
+    - 45260
+    - 45265
+    - 45270
+    - 45280
+    - 45285
+    - 45295
+    - 45300
+    - 45305
+    - 45310
+    - 45330
+    - 45335
+    - 45345
+    - 45350
+    - 45355
+    - 45360
+    - 45375
+    - 45380
+    - 45390
+    - 45395
+    - 45480
+    - 45485
+    - 45505
+    - 45515
+    - 45520
+    - 45525
+    - 45540
+    - 45555
+    - 45565
+    - 45575
+    - 45580
+    - 45585
+    - 45595
+    - 45605
+    - 45610
+    - 45615
+    - 45625
+    - 45630
+    - 45635
+    - 45640
+    - 45650
+    - 45655
+    - 45665
+    - 45675
+    - 45680
+    - 45690
+    - 45695
+    - 45780
+    - 45785
+    - 46240
+    - 46245
+    - 46315
+    - 46320
+    - 46415
+    - 46420
+    - 46540
+    - 46545
+    - 46595
+    - 46600
+    - 46635
+    - 46640
+    - 46655
+    - 46660
+    - 46710
+    - 46715
+    - 46785
+    - 46790
+    - 47190
+    - 47195
+    - 47220
+    - 47225
+    - 47365
+    - 47370
+    - 47415
+    - 47475
+    - 47505
+    - 47510
+    - 47525
+    - 47550
+    - 47555
+    - 47560
+    - 47630
+    - 47635
+    - 47645
+    - 47665
+    - 47670
+    - 47680
+    - 47715
+    - 47720
+    - 47730
+    - 47735
+    - 47745
+    - 47750
+    - 47755
+    - 47765
+    - 47770
+    - 47775
+    - 47780
+    - 47800
+    - 47805
+    - 47815
+    - 47820
+    - 47825
+    - 47830
+    - 47850
+    - 47855
+    - 47860
+    - 47865
+    - 47875
+    - 47880
+    - 47885
+    - 47970
+    - 47975
+    - 47985
+    - 47990
+    - 47995
+    - 48000
+    - 48010
+    - 48020
+    - 48025
+    - 48040
+    - 48045
+    - 48050
+    - 48060
+    - 48065
+    - 48070
+    - 48075
+    - 48080
+    - 48095
+    - 48100
+    - 48110
+    - 48120
+    - 48125
+    - 48135
+    - 48145
+    - 48150
+    - 48180
+    - 48185
+    - 48210
+    - 48215
+    - 48460
+    - 48465
+    - 48520
+    - 48550
+    - 48560
+    - 48575
+    - 48590
+    - 48595
+    - 48740
+    - 48745
+    - 48755
+    - 48760
+    - 48770
+    - 48810
+    - 48820
+    - 48840
+    - 48845
+    - 48930
+    - 48935
+    - 49060
+    - 49065
+    - 49080
+    - 49110
+    - 49115
+    - 49120
+    - 49205
+    - 49210
+    - 49250
+    - 49255
+    - 49260
+    - 49270
+    - 49275
+    - 49295
+    - 49300
+    - 49305
+    - 49310
+    - 49315
+    - 49320
+    - 49340
+    - 49345
+    - 49355
+    - 49360
+    - 49365
+    - 49370
+    - 49385
+    - 49390
+    - 49395
+    - 49405
+    - 49410
+    - 49415
+    - 49420
+    - 49425
+    - 49430
+    - 49445
+    - 49450
+    - 49465
+    - 49470
+    - 49475
+    - 49535
+    - 49540
+    - 49560
+    - 49565
+    - 49575
+    - 49580
+    - 49600
+    - 49605
+    - 49610
+    - 49615
+    - 49650
+    - 49660
+    - 49670
+    - 49675
+    - 49710
+    - 49720
+    - 49725
+    - 49745
+    - 49770
+    - 49775
+    - 49810
+    - 49835
+    - 49840
+    - 50040
+    - 50045
+    - 50055
+    - 50080
+    - 50110
+    - 50115
+    - 50125
+    - 50140
+    - 50175
+    - 50180
+    - 50195
+    - 50200
+    - 50210
+    - 50215
+    - 50225
+    - 50230
+    - 50440
+    - 50445
+    - 50455
+    - 50460
+    - 50470
+    - 50490
+    - 50495
+    - 50515
+    - 50520
+    - 50540
+    - 50545
+    - 50555
+    - 50580
+    - 50595
+    - 51035
+    - 51040
+    - 51190
+    - 51195
+    - 51205
+    - 51210
+    - 51320
+    - 51325
+    - 51385
+    - 51390
+    - 51415
+    - 51420
+    - 52035
+    - 52040
+    - 52045
+    - 52215
+    - 52220
+    - 52280
+    - 52285
+    - 52300
+    - 52400
+    - 52405
+    - 52415
+    - 52440
+    - 52445
+    - 52475
+    - 52480
+    - 52495
+    - 52500
+    - 52510
+    - 52515
+    - 52520
+    - 52525
+    - 52545
+    - 52550
+    - 52555
+    - 52560
+    - 52570
+    - 52575
+    - 52595
+    - 52605
+    - 52610
+    - 52620
+    - 52625
+    - 52655
+    - 52660
+    - 52680
+    - 52690
+    - 52700
+    - 52705
+    - 52730
+    - 52735
+    - 52740
+    - 52760
+    - 52775
+    - 52780
+    - 52795
+    - 52800
+    - 52825
+    - 52830
+    - 52870
+    - 52875
+    - 52905
+    - 52910
+    - 52920
+    - 52935
+    - 52940
+    - 52945
+    - 52955
+    - 52970
+    - 52980
+    - 52990
+    - 52995
+    - 53000
+    - 53005
+    - 53015
+    - 53020
+    - 53030
+    - 53035
+    - 53040
+    - 53060
+    - 53065
+    - 53080
+    - 53085
+    - 53090
+    - 53095
+    - 53100
+    - 53110
+    - 53115
+    - 53125
+    - 53135
+    - 53150
+    - 53155
+    - 53160
+    - 53170
+    - 53175
+    - 53185
+    - 53195
+    - 53200
+    - 53205
+    - 53210
+    - 53220
+    - 53300
+    - 53305
+    - 53310
+    - 53320
+    - 53435
+    - 53440
+    - 53445
+    - 53575
+    - 53580
+    - 53615
+    - 53635
+    - 53650
+    - 53655
+    - 53660
+    - 53830
+    - 53835
+    - 53865
+    - 53905
+    - 53915
+    - 53920
+    - 53935
+    - 53940
+    - 53985
+    - 53990
+    - 54015
+    - 54025
+    - 54040
+    - 54045
+    - 54050
+    - 54055
+    - 54060
+    - 54075
+    - 54080
+    - 54085
+    - 54095
+    - 54105
+    - 54110
+    - 54120
+    - 54125
+    - 54135
+    - 54140
+    - 54160
+    - 54165
+    - 54170
+    - 54175
+    - 54180
+    - 54185
+    - 54195
+    - 54200
+    - 54220
+    - 54230
+    - 54240
+    - 54255
+    - 54265
+    - 54300
+    - 54315
+    - 54340
+    - 54360
+    - 54375
+    - 54385
+    - 54400
+    - 54420
+    - 54435
+    - 54460
+    - 54480
+    - 54505
+    - 54525
+    - 54530
+    - 54535
+    - 54555
+    - 54560
+    - 54565
+    - 54580
+    - 54590
+    - 54595
+    - 54615
+    - 54620
+    - 54630
+    - 54640
+    - 54645
+    - 54660
+    - 54665
+    - 54685
+    - 54690
+    - 54710
+    - 54720
+    - 54725
+    - 54755
+    - 54770
+    - 54780
+    - 54785
+    - 54805
+    - 54815
+    - 54830
+    - 54835
+    - 54855
+    - 54875
+    - 54890
+    - 54900
+    - 54915
+    - 54925
+    - 54930
+    - 54935
+    - 54985
+    - 55465
+    - 55705
+    - 56075
+    - 56080
+    - 56185
+    - 56210
+    - 56220
+    - 56245
+    - 56270
+    - 56280
+    - 56330
+    - 56335
+    ys:
+    - 0
+    - -599
+    - -599
+    - -590
+    - -585
+    - -585
+    - -567
+    - -558
+    - -544
+    - -536
+    - -526
+    - -517
+    - -499
+    - -494
+    - -481
+    - -476
+    - -463
+    - -442
+    - -426
+    - -417
+    - -403
+    - -398
+    - -372
+    - -367
+    - -365
+    - -353
+    - -340
+    - -335
+    - -333
+    - -313
+    - -310
+    - -299
+    - -293
+    - -281
+    - -272
+    - -253
+    - -253
+    - -235
+    - -226
+    - -224
+    - -213
+    - -208
+    - -206
+    - -194
+    - -185
+    - -176
+    - -172
+    - -163
+    - -142
+    - -131
+    - -131
+    - -122
+    - -122
+    - -117
+    - -117
+    - -108
+    - -106
+    - -99
+    - -99
+    - -94
+    - -85
+    - -83
+    - -72
+    - -72
+    - -63
+    - -63
+    - -58
+    - -49
+    - -44
+    - -40
+    - -31
+    - -31
+    - -26
+    - -22
+    - -17
+    - -13
+    - -13
+    - 0
+    - 0
+    - -169
+    - -148
+    - -140
+    - -132
+    - -127
+    - -123
+    - -114
+    - -114
+    - -100
+    - -100
+    - -82
+    - -82
+    - -73
+    - -64
+    - -64
+    - -45
+    - -41
+    - -36
+    - -27
+    - -14
+    - -14
+    - -9
+    - -9
+    - -5
+    - 0
+    - 0
+    - 9
+    - 9
+    - 14
+    - 18
+    - 27
+    - 27
+    - 32
+    - 32
+    - 36
+    - 36
+    - 50
+    - 50
+    - 55
+    - 55
+    - 64
+    - 68
+    - 68
+    - 77
+    - 86
+    - 86
+    - 91
+    - 95
+    - 95
+    - 100
+    - 100
+    - 105
+    - 103
+    - 88
+    - 82
+    - 0
+    - 0
+    - -226
+    - -154
+    - -138
+    - -134
+    - -129
+    - -127
+    - -123
+    - -123
+    - -118
+    - -118
+    - -114
+    - -114
+    - -109
+    - -109
+    - -105
+    - -105
+    - -95
+    - -95
+    - -91
+    - -91
+    - -88
+    - -82
+    - -82
+    - -73
+    - -64
+    - -59
+    - -59
+    - -55
+    - -55
+    - -45
+    - -41
+    - -41
+    - -36
+    - -36
+    - -23
+    - -18
+    - -14
+    - -14
+    - -5
+    - 0
+    - 0
+    - 5
+    - 14
+    - 18
+    - 18
+    - 23
+    - 23
+    - 27
+    - 27
+    - 32
+    - 68
+    - 105
+    - 94
+    - 68
+    - 60
+    - 40
+    - 175
+    - 69
+    - 36
+    - 16
+    - 3
+    - 3
+    - -11
+    - -15
+    - -15
+    - -18
+    - -34
+    - -34
+    - -43
+    - -47
+    - -47
+    - -52
+    - -61
+    - -61
+    - -49
+    - -22
+    - 88
+    - 115
+    - 141
+    - 150
+    - 158
+    - 158
+    - 157
+    - 148
+    - 144
+    - 135
+    - 135
+    - 126
+    - 126
+    - 116
+    - 116
+    - 107
+    - 105
+    - 98
+    - 92
+    - 85
+    - 82
+    - 76
+    - 74
+    - 66
+    - 57
+    - 55
+    - 49
+    - 52
+    - 47
+    - 54
+    - 52
+    - 70
+    - 73
+    - 88
+    - 93
+    - 108
+    - 123
+    - 134
+    - 150
+    - 154
+    - 149
+    - 142
+    - 121
+    - 116
+    - 114
+    - 103
+    - 103
+    - 85
+    - 80
+    - 80
+    - 71
+    - 71
+    - 57
+    - 53
+    - 53
+    - 39
+    - 37
+    - 21
+    - 12
+    - 6
+    - 12
+    - 12
+    - 7
+    - 66
+    - 68
+    - 91
+    - 104
+    - 111
+    - 117
+    - 122
+    - 118
+    - 122
+    - 112
+    - 103
+    - 103
+    - 94
+    - 89
+    - 85
+    - 76
+    - 76
+    - 66
+    - 66
+    - 57
+    - 53
+    - 44
+    - 44
+    - 35
+    - 35
+    - 21
+    - 12
+    - 12
+    - -2
+    - -2
+    - -11
+    - -9
+    - -21
+    - -18
+    - -26
+    - -15
+    - -10
+    - -14
+    - -8
+    - -18
+    - -12
+    - -18
+    - -38
+    - -43
+    - -52
+    - -56
+    - -65
+    - -70
+    - -70
+    - -79
+    - -79
+    - -93
+    - -97
+    - -97
+    - -106
+    - -106
+    - -124
+    - -129
+    - -129
+    - -138
+    - -122
+    - -120
+    - 69
+    - 315
+    - 445
+    - 733
+    - 1027
+    - 1114
+    - 1200
+    - 1200
+    - -254
+    - -277
+    - -284
+    - -318
+    - -331
+    - -345
+    - -349
+    - -377
+    - -379
+    - -390
+    - -399
+    - -399
+    - -304
+    - -318
+    - -322
+    - -331
+    - -331
+    - 0
+    - 0
+    - -90
+    - -79
+    - -66
+    - -59
+    - -44
+    - 1
+    - 15
+    - 18
+    - 49
+    - 58
+    - 72
+    - 81
+    - 122
+    - 124
+    - 267
+    - 326
+    - 362
+    - 403
+    - 406
+    - 494
+    - 496
+    - 558
+    - 560
+    - 803
+    - 867
+    - 894
+    - 940
+    - 972
+    - 1012
+    - 1045
+    - 1046
+    - 1115
+    - 1137
+    - 1154
+    - 1149
+    - 1167
+    - 1191
+    - 1186
+    - 1200
+    - 1200
+    - 1089
+    - 833
+    - 943
+    - 281
+    - 175
+    - -2
+    - -64
+    - -97
+    - -125
+    - -129
+    - -124
+    - -115
+    - -115
+    - -111
+    - -111
+    - -106
+    - -102
+    - -93
+    - -93
+    - -88
+    - -84
+    - -84
+    - -74
+    - -74
+    - -70
+    - -70
+    - -65
+    - -65
+    - -56
+    - -56
+    - -52
+    - -47
+    - -43
+    - -43
+    - -38
+    - -38
+    - -34
+    - -29
+    - -20
+    - -20
+    - -15
+    - -11
+    - -2
+    - 3
+    - 7
+    - 7
+    - 14
+    - 26
+    - 35
+    - 39
+    - 39
+    - 48
+    - 48
+    - 60
+    - 66
+    - 66
+    - 80
+    - 80
+    - 85
+    - 85
+    - 89
+    - 89
+    - 98
+    - 99
+    - 87
+    - 0
+    - 0
+    - -200
+    - -145
+    - -136
+    - -133
+    - -129
+    - -124
+    - -124
+    - -120
+    - -115
+    - -115
+    - -102
+    - -93
+    - -90
+    - -84
+    - -84
+    - -70
+    - -65
+    - -61
+    - -56
+    - -52
+    - -47
+    - -38
+    - -34
+    - -34
+    - -24
+    - -21
+    - -15
+    - -13
+    - -6
+    - -2
+    - 3
+    - 5
+    - 16
+    - 16
+    - 21
+    - 21
+    - 35
+    - 39
+    - 39
+    - 44
+    - 48
+    - 48
+    - 57
+    - 57
+    - 62
+    - 66
+    - 71
+    - 71
+    - 76
+    - 76
+    - 80
+    - 80
+    - 85
+    - 85
+    - 89
+    - 89
+    - 94
+    - 94
+    - 98
+    - 98
+    - 103
+    - 103
+    - 107
+    - 107
+    - 104
+    - 74
+    - 0
+    - 0
+    - -206
+    - -211
+    - -218
+    - -142
+    - -115
+    - -106
+    - -88
+    - -2
+    - 3
+    - 7
+    - 7
+    - 12
+    - 16
+    - 16
+    - 21
+    - 21
+    - 26
+    - 30
+    - 35
+    - 38
+    - 44
+    - 48
+    - 57
+    - 80
+    - 85
+    - 85
+    - 89
+    - 89
+    - 94
+    - 94
+    - 0
+    - 0
+    - 642
+    - 687
+    - 709
+    - 741
+    - 751
+    - 761
+    - 762
+    - 762
+    - 757
+    - 0
+    - 0
+    - 710
+    - 703
+    - 703
+    - 0
+    - 0
+    - 915
+    - 1110
+    - 1200
+    - 1200
+    - 0
+    - 0
+    - -206
+    - -64
+    - -8
+    - 14
+    - 19
+    - 15
+    - 10
+    - 10
+    - 6
+    - 6
+    - 1
+    - 1
+    - -3
+    - -3
+    - -8
+    - -8
+    - -13
+    - -13
+    - -17
+    - -17
+    - -13
+    - -5
+    - 7
+    - 9
+    - 47
+    - 52
+    - 58
+    - 60
+    - 60
+    - 56
+    - 15
+    - 10
+    - 1
+    - -3
+    - -3
+    - 28
+    - 51
+    - 60
+    - 60
+    - 78
+    - 78
+    - 97
+    - 101
+    - 101
+    - 106
+    - 104
+    - 98
+    - 99
+    - 75
+    - 72
+    - 31
+    - 22
+    - 18
+    - 15
+    - 19
+    - 10
+    - -53
+    - -81
+    - -94
+    - -103
+    - -103
+    - -122
+    - -121
+    - -138
+    - -139
+    - -120
+    - -118
+    - -107
+    - -69
+    - -58
+    - 218
+    - 251
+    - 334
+    - 352
+    - 336
+    - 336
+    - 301
+    - 301
+    - 260
+    - 258
+    - 237
+    - 219
+    - 215
+    - -8
+    - -8
+    - -3
+    - 1
+    - 15
+    - 222
+    - 228
+    - 0
+    - 0
+    - 145
+    - 151
+    - -2
+    - -33
+    - -39
+    - -70
+    - -12
+    - -40
+    - 0
+    - 0
+    - -62
+    - -6
+    - 6
+    - 12
+    - 13
+    - -1
+    - -5
+    - -5
+    - -23
+    - -23
+    - -34
+    - -41
+    - -41
+    - -55
+    - -55
+    - -78
+    - -94
+    - -101
+    - -103
+    - -132
+    - -137
+    - -151
+    - -153
+    - -191
+    - -205
+    - -205
+    - -241
+    - -241
+    - -282
+    - -282
+    - -328
+    - -346
+    - -362
+    - -490
+    - -521
+    - -554
+    - -569
+    - -606
+    - -620
+    - -684
+    - -710
+    - -734
+    - -177
+    - -178
+    - -164
+    - -164
+    - -132
+    - -73
+    - -41
+    - -39
+    - 22
+    - 90
+    - 104
+    - 104
+    - 122
+    - 154
+    - 1090
+    - 1095
+    - 1122
+    - 1124
+    - 1136
+    - 1125
+    - 1002
+    - 940
+    - 580
+    - 577
+    - 109
+    - -21
+    - -67
+    - -116
+    - -119
+    - -114
+    - -105
+    - -105
+    - -101
+    - -101
+    - -96
+    - -94
+    - -87
+    - -87
+    - -78
+    - -76
+    - -69
+    - -69
+    - -64
+    - -60
+    - -60
+    - -46
+    - -46
+    - -28
+    - -23
+    - -23
+    - -19
+    - -19
+    - -10
+    - -5
+    - 4
+    - 16
+    - 22
+    - 22
+    - 36
+    - 36
+    - 45
+    - 49
+    - 49
+    - 52
+    - 63
+    - 63
+    - 72
+    - 72
+    - 77
+    - 81
+    - 86
+    - 90
+    - 95
+    - 95
+    - 99
+    - 99
+    - 104
+    - 109
+    - 113
+    - 113
+    - 109
+    - 97
+    - 0
+    - 0
+    - -196
+    - -158
+    - -144
+    - -106
+    - -94
+    - -84
+    - -69
+    - -66
+    - -60
+    - -51
+    - -51
+    - -41
+    - -37
+    - -32
+    - -32
+    - -28
+    - -23
+    - -19
+    - -19
+    - -11
+    - -5
+    - -5
+    - -1
+    - -1
+    - 4
+    - 4
+    - 9
+    - 9
+    - 18
+    - 18
+    - 22
+    - 22
+    - 27
+    - 29
+    - 36
+    - 36
+    - 40
+    - 40
+    - 45
+    - 45
+    - 54
+    - 54
+    - 59
+    - 63
+    - 63
+    - 72
+    - 72
+    - 77
+    - 77
+    - 81
+    - 81
+    - 90
+    - 90
+    - 95
+    - 95
+    - 99
+    - 104
+    - 104
+    - 109
+    - 109
+    - 113
+    - 113
+    - 122
+    - 127
+    - 131
+    - 130
+    - 33
+    - 31
+    - 0
+    - 0
+    - -187
+    - -158
+    - -176
+    - -103
+    - -98
+    - -91
+    - -87
+    - -87
+    - -78
+    - -78
+    - -73
+    - -64
+    - -64
+    - -60
+    - -55
+    - -51
+    - -51
+    - -41
+    - -37
+    - -37
+    - -32
+    - -32
+    - -19
+    - -16
+    - -10
+    - -10
+    - -1
+    - -1
+    - 9
+    - 9
+    - 22
+    - 27
+    - 31
+    - 31
+    - 36
+    - 36
+    - 40
+    - 45
+    - 45
+    - 49
+    - 49
+    - 54
+    - 54
+    - 59
+    - 63
+    - 66
+    - 72
+    - 72
+    - 81
+    - 81
+    - 90
+    - 90
+    - 99
+    - 99
+    - 104
+    - 104
+    - 88
+    - 60
+    - 42
+    - 2
+    - -19
+    - 686
+    - 604
+    - 584
+    - 578
+    - 582
+    - 586
+    - 604
+    - 604
+    - 540
+    - 0
+    - 0
+    - 1032
+    - 1037
+    - 1046
+    - 1046
+    - 1051
+    - 1051
+    - 1055
+    - 1055
+    - 1060
+    - 1060
+    - 1064
+    - 1065
+    - 1068
+    - 1081
+    - 1122
+    - 1173
+    - 0
+    - 0
+    - -218
+    - -295
+    - -342
+    - -357
+    - -439
+    - 1190
+    - 1049
+    - 1034
+    - 1021
+    - 1012
+    - 1005
+    - 1001
+    - 991
+    - 969
+    - 914
+    - 905
+    - 887
+    - 864
+    - 864
+    - 464
+    - 369
+    - 319
+    - 269
+    - 173
+    - 0
+    - 0
+    - 373
+    - 31
+    - -45
+    - -70
+    - -109
+    - -114
+    - -114
+    - -110
+    - -101
+    - -96
+    - -91
+    - -91
+    - -87
+    - -87
+    - -82
+    - -82
+    - -78
+    - -78
+    - -73
+    - -73
+    - -58
+    - -46
+    - -46
+    - -41
+    - -41
+    - -37
+    - -37
+    - -28
+    - -28
+    - -23
+    - -23
+    - -19
+    - -19
+    - -14
+    - -14
+    - -10
+    - -5
+    - -5
+    - -1
+    - -1
+    - 4
+    - 4
+    - 9
+    - 9
+    - 13
+    - 18
+    - 22
+    - 22
+    - 31
+    - 31
+    - 36
+    - 36
+    - 40
+    - 45
+    - 45
+    - 49
+    - 49
+    - 54
+    - 54
+    - 59
+    - 59
+    - 63
+    - 68
+    - 68
+    - 72
+    - 72
+    - 77
+    - 77
+    - 81
+    - 81
+    - 86
+    - 86
+    - 90
+    - 90
+    - 95
+    - 95
+    - 99
+    - 99
+    - 104
+    - 104
+    - 103
+    - 0
+    - 0
+    - -195
+    - -101
+    - -96
+    - -87
+    - -82
+    - -78
+    - -73
+    - -73
+    - -69
+    - -69
+    - -64
+    - -60
+    - -60
+    - -55
+    - -55
+    - -46
+    - -46
+    - -41
+    - -41
+    - -28
+    - -28
+    - -19
+    - -14
+    - -10
+    - -10
+    - -5
+    - -5
+    - -1
+    - -1
+    - 9
+    - 9
+    - 13
+    - 18
+    - 18
+    - 24
+    - 36
+    - 40
+    - 49
+    - 54
+    - 54
+    - 68
+    - 66
+    - 46
+    - 44
+    - 30
+    - 0
+    - 0
+    - -163
+    - -156
+    - 655
+    - 702
+    - 721
+    - 727
+    - 731
+    - 731
+    - 713
+    - 690
+    - -14
+    - -14
+    - 0
+    - 0
+    - 1200
+    - 1199
+    - 983
+    - 879
+    - 818
+    - 781
+    - 706
+    - 563
+    - 561
+    - 127
+    - 113
+    - 113
+    - 77
+    - 59
+    - 59
+    - 27
+    - 9
+    - -1
+    - -5
+    - 0
+    - 400
+    - 471
+    - 476
+    - 475
+    - 488
+    - 496
+    - 482
+    - 469
+    - 460
+    - 456
+    - 437
+    - 437
+    - -244
+    - 422
+    - -226
+    - -226
+    - -217
+    - -217
+    - 367
+    - 306
+    - 265
+    - 262
+    - 201
+    - 142
+    - 128
+    - 128
+    - 110
+    - 108
+    - 97
+    - 83
+    - 76
+    - -176
+    - -176
+    - -163
+    - -163
+    - 40
+    - 28
+    - 24
+    - 9
+    - -231
+    - 6
+    - -3
+    - -8
+    - -8
+    - -13
+    - -13
+    - -22
+    - -22
+    - -131
+    - -131
+    - -31
+    - 6
+    - 8
+    - -113
+    - -109
+    - 874
+    - 915
+    - 917
+    - 947
+    - 947
+    - 978
+    - -100
+    - 19
+    - 19
+    - 25
+    - -58
+    - -49
+    - 25
+    - 28
+    - 606
+    - 651
+    - 665
+    - 369
+    - 392
+    - 401
+    - 433
+    - 451
+    - 454
+    - 469
+    - 478
+    - 497
+    - 510
+    - 510
+    - 524
+    - 528
+    - 530
+    - 551
+    - 551
+    - 615
+    - 628
+    - 628
+    - 651
+    - 651
+    - 706
+    - 728
+    - 730
+    - 883
+    - 906
+    - 924
+    - 933
+    - 933
+    - 942
+    - 956
+    - 956
+    - 969
+    - 980
+    - 992
+    - 992
+    - 1006
+    - 1010
+    - 1015
+    - 1015
+    - 1033
+    - 1033
+    - 683
+    - 1051
+    - 1065
+    - 1069
+    - 1078
+    - 1080
+    - 1087
+    - 1087
+    - 1033
+    - 1097
+    - 1100
+    - 1037
+    - 1107
+    - 1113
+    - 1042
+    - 1042
+    - 1128
+    - 1051
+    - 1149
+    - 1200
+    - 1200
+    - 1083
+    - 1200
+    - 1106
+    - 1106
+    - 1110
+    - 1200
+    - 1200
+    - 1147
+    - 1147
+    - 592
+    - 1200
+    - 1200
+    - 1147
+    - 1147
+    - 1128
+    - 1144
+    - 1142
+    - 1200
+    - 1200
+    - 1128
+    - 1128
+    - 1133
+    - 1200
+    - 1200
+    - 1128
+    - 1125
+    - 1119
+    - 1119
+    - 1200
+    - 1200
+    - 1119
+    - 1200
+    - 1147
+    - 1147
+    - 1200
+    - 1200
+    - 1124
+    - 1200
+    - 1124
+    - 1200
+    - 1200
+    - -348
+    - -358
+    - -367
+    - -377
+    - -38
+    - -34
+    - 115
+    - -29
+    - 119
+    - -29
+    - 124
+    - -29
+    - -29
+    - 124
+    - 124
+    - -29
+    - -29
+    - 124
+    - 124
+    - -29
+    - -28
+    - 124
+    - -27
+    - -25
+    - 124
+    - 124
+    - -25
+    - -22
+    - 124
+    - 124
+    - -21
+    - -20
+    - -15
+    - 128
+    - 128
+    - -15
+    - -15
+    - 128
+    - -14
+    - -11
+    - -6
+    - -6
+    - -2
+    - 3
+    - 3
+    - 128
+    - 4
+    - 128
+    - 4
+    - 4
+    - 128
+    - 128
+    - 4
+    - 6
+    - 119
+    - 119
+    - 6
+    - 7
+    - 115
+    - 115
+    - 110
+    - -2
+    - -2
+    - -6
+    - -6
+    - 106
+    - -6
+    - -6
+    - 101
+    - 101
+    - 97
+    - 87
+    - 87
+    - -6
+    - -6
+    - 87
+    - 87
+    - -6
+    - -6
+    - 65
+    - 65
+    - 56
+    - 51
+    - -6
+    - -6
+    - 28
+    - 28
+    - 24
+    - 15
+    - 10
+    - 10
+    - 1
+    - -3
+    - -3
+    - -8
+    - -8
+    - -44
+    - -49
+    - -58
+    - -58
+    - -76
+    - -8
+    - -8
+    - -90
+    - -94
+    - -103
+    - -103
+    - -108
+    - -108
+    - -8
+    - -7
+    - -113
+    - -113
+    - -117
+    - -117
+    - -7
+    - -6
+    - -2
+    - 3
+    - 3
+    - -94
+    - -94
+    - 5
+    - 7
+    - 7
+    - 12
+    - 12
+    - 19
+    - -94
+    - -94
+    - 21
+    - 21
+    - 26
+    - 26
+    - 30
+    - 30
+    - -90
+    - -90
+    - -85
+    - -76
+    - -76
+    - 30
+    - 30
+    - 28
+    - 202
+    - 202
+    - 211
+    - 26
+    - -49
+    - -49
+    - 21
+    - 21
+    - -40
+    - -44
+    - -49
+    - -49
+    - -53
+    - -53
+    - -58
+    - 21
+    - 21
+    - -94
+    - -117
+    - -126
+    - 21
+    - 21
+    - 330
+    - 343
+    - 354
+    - 361
+    - 361
+    - 366
+    - 366
+    - 375
+    - 375
+    - 380
+    - 380
+    - 21
+    - 21
+    - 380
+    - 380
+    - 370
+    - 367
+    - 361
+    - 361
+    - 357
+    - 353
+    - 348
+    - 348
+    - 339
+    - 339
+    - 220
+    - 213
+    - 202
+    - 198
+    - 193
+    - 193
+    - 701
+    - 18
+    - 17
+    - 189
+    - 189
+    - 193
+    - 193
+    - 198
+    - 202
+    - 202
+    - 16
+    - 15
+    - -85
+    - -90
+    - -67
+    - -58
+    - -58
+    - -40
+    - 15
+    - 14
+    - 275
+    - 275
+    - 280
+    - 13
+    - 13
+    - 289
+    - 289
+    - 134
+    - 134
+    - 130
+    - 130
+    - -35
+    - -35
+    - -85
+    - -85
+    - -94
+    - -94
+    - -103
+    - -108
+    - 211
+    - 216
+    - 220
+    - 220
+    - 225
+    - 225
+    - 228
+    - 234
+    - 234
+    - 239
+    - 239
+    - 243
+    - 243
+    - 252
+    - 252
+    - 257
+    - 257
+    - 261
+    - 261
+    - 266
+    - 266
+    - 270
+    - 270
+    - 275
+    - 275
+    - 280
+    - 280
+    - 284
+    - 287
+    - 293
+    - 293
+    - 298
+    - 301
+    - 310
+    - 320
+    - 375
+    - 380
+    - 389
+    - 392
+    - 401
+    - 411
+    - 411
+    - 425
+    - 428
+    - 439
+    - 442
+    - 525
+    - 525
+    - 534
+    - -134
+    - -150
+    - -155
+    - 670
+    - 670
+    - 684
+    - -164
+    - -168
+    - -173
+    - 761
+    - -173
+    - 939
+    - -182
+    - -182
+    - -531
+    - -538
+    - 1030
+    - 1034
+    - 1042
+    - 1048
+    - 1048
+    - 1057
+    - 1057
+    - 1064
+    - 1070
+    - 1070
+    - 1084
+    - 1130
+    - 1130
+    - 1139
+    - -259
+    - -731
+    - -731
+    - 1139
+    - 1139
+    - 1134
+    - 1130
+    - -359
+    - -368
+    - -368
+    - -377
+    - -377
+    - -380
+    - -414
+    - -463
+    - -908
+    - -917
+    - 1161
+    - 1164
+    - 1170
+    - 1175
+    - 1180
+    - 1184
+    - 1184
+    - 1189
+    - 1189
+    - 1198
+    - 1198
+    - -682
+    - -686
+    - -705
+    - -707
+    - 1200
+    - 1200
+    - 1116
+    - 1113
+    - 1102
+    - 1096
+    - 1084
+    - 1075
+    - 1200
+    - 1200
+    - 975
+    - 975
+    - 966
+    - 966
+    - 961
+    - 954
+    - 945
+    - 934
+    - 928
+    - 907
+    - 893
+    - 887
+    - 870
+    - 864
+    - 852
+    - 849
+    - 834
+    - 828
+    - 820
+    - 809
+    - 511
+    - 502
+    - 434
+    - 393
+    - 702
+    - 698
+    - 708
+    - 710
+    - 352
+    - 348
+    - 348
+    - 1200
+    - 1200
+    - 666
+    - 731
+    - 734
+    - 882
+    - 880
+    - 916
+    - 916
+    - 1200
+    - 1200
+    - 620
+    - 620
+    - 614
+    - 607
+    - 607
+    - 598
+    - 584
+    - 577
+    - 566
+    - 563
+    - 552
+    - 552
+    - 543
+    - 543
+    - 534
+    - 534
+    - 530
+    - 1200
+    - 780
+    - 793
+    - 793
+    - 813
+    - 816
+    - 1200
+    - 1011
+    - 1008
+    - 1002
+    - 1002
+    - 989
+    - 989
+    - 983
+    - 972
+    - 402
+    - 396
+    - 357
+    - 351
+    - 330
+    - 323
+    - 293
+    - 1200
+    - 1200
+    - 261
+    - 261
+    - 1200
+    - 1200
+    - 320
+    - 304
+    - 289
+    - 286
+    - 570
+    - 561
+    - 552
+    - 549
+    - 539
+    - 534
+    - 520
+    - 511
+    - 502
+    - 493
+    - 475
+    - 466
+    - 454
+    - 448
+    - 444
+    - 439
+    - 430
+    - 416
+    - 407
+    - 402
+    - 398
+    - 398
+    - 407
+    - 407
+    - 398
+    - 398
+    - 384
+    - 380
+    - 377
+    - 366
+    - 366
+    - 357
+    - 357
+    - 326
+    - 338
+    - 293
+    - 286
+    - 280
+    - 280
+    - 275
+    - 270
+    - 261
+    - 261
+    - 252
+    - 252
+    - 331
+    - 320
+    - 316
+    - 311
+    - 311
+    - 302
+    - 302
+    - 284
+    - 759
+    - 752
+    - 749
+    - 743
+    - 743
+    - -30
+    - -30
+    - -34
+    - -34
+    - 710
+    - 699
+    - 693
+    - -11
+    - -7
+    - -2
+    - -2
+    - -7
+    - -11
+    - -16
+    - -16
+    - -20
+    - -20
+    - -25
+    - 586
+    - 575
+    - 568
+    - -25
+    - -25
+    - 1195
+    - 1196
+    - 2
+    - -2
+    - -2
+    - 1200
+    - 1200
+    - -2
+    - -2
+    - 6
+    - 4
+    - -2
+    - -2
+    - 1
+    - 7
+    - 1199
+    - 1175
+    - 1163
+    - 1148
+    - 1139
+    - 1120
+    - 1108
+    - 1084
+    - 1075
+    - 1043
+    - 1030
+    - 25
+    - 25
+    - 723
+    - 676
+    - -2
+    - -2
+    - -7
+    - -11
+    - -16
+    - -16
+    - -20
+    - -39
+    - -66
+    - -89
+    - -150
+    - -157
+    - -157
+    - -166
+    - -166
+    - -175
+    - -178
+    - -198
+    - -201
+    - -207
+    - -207
+    - -211
+    - -211
+    - -220
+    - -223
+    - -243
+    - -243
+    - -257
+    - -257
+    - -261
+    - -261
+    - -275
+    - -275
+    - -293
+    - -293
+    - -311
+    - -314
+    - -325
+    - -325
+    - -343
+    - -343
+    - -361
+    - -364
+    - -380
+    - -383
+    - -389
+    - -392
+    - -420
+    - -420
+    - -443
+    - -446
+    - -466
+    - -473
+    - -493
+    - -493
+    - -511
+    - -511
+    - -527
+    - -534
+    - -537
+    - -548
+    - -552
+    - -561
+    - -564
+    - -580
+    - -586
+    - -598
+    - -598
+    - -620
+    - -623
+    - -643
+    - -643
+    - -670
+    - -672
+    - -693
+    - -698
+    - -701
+    - -716
+    - -716
+    - -730
+    - -732
+    - -743
+    - -752
+    - -752
+    - -770
+    - -773
+    - -784
+    - -791
+    - -807
+    - -810
+    - -820
+    - -823
+    - -834
+    - -837
+    - -843
+    - -843
+    - -857
+    - -860
+    - -866
+    - -869
+    - -880
+    - -887
+    - -893
+    - -896
+    - -902
+    - -914
+    - -920
+    - -920
+    - -925
+    - -925
+    - -934
+    - -934
+    - -948
+    - -951
+    - -957
+    - -402
+    - -389
+    - -389
+    - -380
+    - -375
+    - -368
+    - -361
+    - -357
+    - -343
+    - -325
+    - -318
+    - -311
+    - -307
+    - -302
+    - -289
+    - -284
+    - -280
+    - -270
+    - -257
+    - -254
+    - -239
+    - -230
+    - -223
+    - -211
+    - -198
+    - -189
+    - -189
+    - -180
+    - -177
+    - -166
+    - -152
+    - -143
+    - -140
+    - -134
+    - -134
+    - -116
+    - -113
+    - -80
+    - -61
+    - -50
+    - -43
+    - -43
+    - -30
+    - -30
+    - -20
+    - -13
+    - -2
+    - 8
+    - 16
+    - 27
+    - 34
+    - 34
+    - 48
+    - 55
+    - 61
+    - 68
+    - 80
+    - 87
+    - 93
+    - 93
+    - 102
+    - 107
+    - 114
+    - 125
+    - 134
+    - 152
+    - 175
+    - 189
+    - 191
+    - 198
+    - 201
+    - 211
+    - 211
+    - 216
+    - 939
+    - 962
+    - 984
+    - 993
+    - 1025
+    - 1034
+    - 493
+    - 487
+    - 402
+    - 375
+    - 372
+    - 339
+    - 293
+    - 300
+    - 275
+    - 272
+    - 252
+    - 250
+    - 234
+    - 222
+    - 211
+    - 208
+    - 198
+    - 198
+    - 189
+    - 189
+    - 186
+    - 178
+    - 1075
+    - 1135
+    - 1148
+    - 1157
+    - 1160
+    - 1175
+    - 1175
+    - 1167
+    - 1143
+    - 1137
+    - 1116
+    - 1089
+    - 99
+    - 89
+    - 84
+    - 1200
+    - 84
+    - 81
+    - 70
+    - 70
+    - 61
+    - 58
+    - 48
+    - 43
+    - 43
+    - 39
+    - 39
+    - 0
+    - 0
+    - 1200
+    - 1200
+    - 90
+    - 43
+    - 0
+    - 0
+    - 1200
+    - 1200
+    - -90
+    - -88
+    - 1200
+    - 1200
+    - -86
+    - -85
+    - 1200
+    - 1200
+    - -81
+    - -78
+    - 1200
+    - 1200
+    - -69
+    - -68
+    - 1200
+    - 1200
+    - -59
+    - -57
+    - -39
+    - -24
+    - -39
+    - -39
+    - -30
+    - -6
+    - 1200
+    - 1200
+    - 2
+    - 11
+    - 13
+    - 949
+    - 1200
+    - 1200
+    - 827
+    - 821
+    - 799
+    - 781
+    - 774
+    - 754
+    - 751
+    - 736
+    - 732
+    - 718
+    - 706
+    - 681
+    - 681
+    - 668
+    - 664
+    - 645
+    - 624
+    - 613
+    - 611
+    - 599
+    - 590
+    - 586
+    - 1200
+    - 1200
+    - 427
+    - 421
+    - 413
+    - 411
+    - 399
+    - 396
+    - 382
+    - 372
+    - 368
+    - 364
+    - 354
+    - 348
+    - 331
+    - 329
+    - 218
+    - 1200
+    - 1200
+    - 159
+    - 145
+    - 145
+    - 131
+    - 127
+    - 127
+    - 122
+    - 118
+    - 113
+    - 113
+    - 1200
+    - 1200
+    - 136
+    - 136
+    - 140
+    - 143
+    - 154
+    - 154
+    - 1200
+    - 1200
+    - 868
+    - 868
+    - 899
+    - 918
+    - 936
+    - 949
+    - 960
+    - 972
+    - 1018
+    - 1200
+    - 1200
+    - 1081
+    - 1086
+    - 1071
+    - 1068
+    - 1200
+    - 1200
+    - 1031
+    - 1022
+    - 1022
+    - 1018
+    - 1018
+    - 1013
+    - 1013
+    - 1009
+    - 1009
+    - 1004
+    - 1004
+    - 995
+    - 995
+    - 990
+    - 990
+    - 986
+    - 986
+    - 981
+    - 981
+    - 979
+    - 972
+    - 972
+    - 968
+    - 968
+    - 959
+    - 959
+    - 954
+    - 954
+    - 1200
+    - 1200
+    - 1113
+    - 1200
+    - 1200
+    - 886
+    - 879
+    - 872
+    - 872
+    - 863
+    - 859
+    - 854
+    - 854
+    - 845
+    - 831
+    - 828
+    - 820
+    - 813
+    - 806
+    - 797
+    - 790
+    - 787
+    - 774
+    - 768
+    - 754
+    - 745
+    - 1200
+    - 1200
+    - 654
+    - 649
+    - 640
+    - 636
+    - 631
+    - 631
+    - 622
+    - 618
+    - 613
+    - 613
+    - 609
+    - 609
+    - 604
+    - 604
+    - 1200
+    - 1200
+    - 1109
+    - 1112
+    - 1131
+    - 1140
+    - 1147
+    - 1159
+    - 1166
+    - 1172
+    - 1179
+    - 1186
+    - 1190
+    - 1199
+    - 1200
+    - 1200
+    - 0
+    - 0
+    - 1200
+    - 1200
+    - 0
+    - 0
+    - 1200
+    - 1200
+    - 0
+    - 0
+    - 1200
+    - 1200
+    - 0
+    - 1200
+    - 1200
+    - 0
+    - 0
+    - 1200
+    - 1200
+    - 1200
+    - 1199
+    - 1196
+    - 1181
+    - 0
+    - 0
+    - 1159
+    - 1154
+    - 1145
+    - 1142
+    - 1136
+    - 1136
+    - 1127
+    - 1122
+    - 1113
+    - 1113
+    - 1104
+    - 1104
+    - 1099
+    - 1099
+    - 1095
+    - 1090
+    - 1090
+    - 0
+    - 0
+    - 1068
+    - 1059
+    - 1059
+    - 1052
+    - 1040
+    - 1036
+    - 1034
+    - 1022
+    - 1018
+    - 1010
+    - 1004
+    - 1004
+    - 995
+    - 990
+    - 0
+    - 0
+    - 968
+    - 963
+    - 954
+    - 949
+    - 945
+    - 945
+    - 940
+    - 940
+    - 918
+    - 909
+    - 906
+    - 895
+    - 892
+    - 872
+    - 869
+    - 859
+    - 859
+    - 856
+    - 845
+    - 838
+    - 827
+    - 822
+    - 822
+    - 813
+    - 811
+    - 799
+    - 799
+    - 790
+    - 786
+    - 783
+    - 768
+    - 766
+    - 759
+    - 756
+    - 749
+    - 745
+    - 742
+    - 731
+    - 729
+    - 722
+    - 704
+    - 662
+    - 659
+    - 0
+    - 659
+    - 646
+    - 645
+    - 0
+    - 0
+    - 631
+    - 631
+    - 627
+    - 622
+    - 613
+    - 0
+    - 0
+    - 572
+    - 561
+    - 536
+    - 533
+    - 527
+    - 523
+    - 518
+    - 501
+    - 495
+    - 490
+    - 481
+    - 477
+    - 477
+    - 472
+    - 472
+    - 468
+    - 463
+    - 463
+    - 459
+    - 459
+    - 454
+    - 40
+    - 36
+    - 18
+    - 18
+    - 4
+    - 4
+    - -5
+    - -5
+    - -10
+    - -10
+    - -14
+    - -14
+    - -19
+    - -19
+    - -28
+    - -28
+    - -37
+    - -37
+    - -55
+    - -60
+    - -78
+    - -87
+    - -91
+    - -105
+    - -110
+    - -128
+    - -128
+    - -146
+    - -173
+    - -187
+    - -208
+    - -210
+    - -226
+    - -237
+    - -253
+    - -260
+    - -264
+    - -278
+    - -289
+    - -296
+    - -314
+    - -329
+    - -332
+    - -353
+    - -360
+    - -375
+    - -387
+    - -398
+    - -410
+    - -414
+    - -425
+    - -446
+    - -451
+    - -460
+    - -465
+    - -469
+    - -482
+    - -487
+    - -497
+    - -501
+    - -519
+    - -528
+    - -537
+    - -541
+    - -555
+    - -558
+    - -612
+    - -676
+    - -1022
+    - -1200
+    - -1200
+    - -206
+    - -228
+    - -232
+    - -237
+    - -241
+    - -241
+    - -246
+    - -246
+    - 0
+    abbr: pitd
+wave_parts: []
