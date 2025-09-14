@@ -1,6 +1,3 @@
-## HOLAAA!!! / HIII!!! 👋
-
-____________________
-No se q poner aqui 😭
-- 🌱 Si quieren contactarme, mi e-mail publico (español) es: gpt.elpepe@gmail.com
-- 🗽 If you want to contact me, my public (english) e-mail is: hectoliterswave@gmail.com
+HIII!!! 👋
+I'm a Developer and Voca Prod sometimes 🔲🔳
+- 📨 If you wish to contact me, my public (english) E-mail is: hectoliterswave@gmail.com
